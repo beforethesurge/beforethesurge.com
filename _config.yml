@@ -16,7 +16,7 @@ timezone:
 
 title: Before The Surge # the main title
 
-tagline: Website for documentation and nerd stuff # it will display as the sub-title
+tagline: Documentation on Networking and Ethical Hacking # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   A minimal, responsive and feature-rich Jekyll theme for technical writing.
