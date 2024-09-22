@@ -19,7 +19,7 @@ categories: [Networking]
 3.  **Check Network Settings**
     - Ensure the computer is connected to the correct network.
     - Verify that the computer's IP settings are set to obtain an IP address automatically (DHCP).
-    - If set to static, 
+    - If set to static, ensure IP is specified and is correct for workstation/server
 
 4.  **Run Network Diagnostics**
     - On Windows 11: Go to `Settings` > `System` > `Status` > `Troubleshoot` > `Other Troubleshooters` > `Network and Internet`.
@@ -47,4 +47,4 @@ categories: [Networking]
 9.  **Contact ISP**
     - If all else fails, contact the Internet Service Provider (ISP) to check for outages or issues on their end.
 
-#### Bear in mind, these are general tips, not absolutes (be willing to stray off from the exact steps and think outside the box, but is a good start)
+#### Bear in mind, these are general tips, not absolutes (be willing to stray off from the exact steps and think outside the box, but it's a good start)
