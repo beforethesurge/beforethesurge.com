@@ -8,7 +8,7 @@ categories: [OS,Linux]
 # TAMPER WITH EVERYTHING ABOVE AT YOUR OWN RISK
 
 # Start fastfetch
-fastfetch
+#fastfetch
 
 # Clears Bash/Zsh History
 #echo "" > ~/.bash_history && \
@@ -18,5 +18,5 @@ fastfetch
 #history -p
 
 # Export Environment Variables (only if running code, not code-oss)
-export DONT_PROMPT_WSL_INSTALL=1
+#export DONT_PROMPT_WSL_INSTALL=1
 ```
