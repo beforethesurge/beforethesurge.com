@@ -16,4 +16,7 @@ fastfetch
 # "-c" for Bash and "-p" for Zsh (may need to adjust history alias if errors show up)
 #history -c
 #history -p
+
+# Export Environment Variables (only if running code, not code-oss)
+export DONT_PROMPT_WSL_INSTALL=1
 ```
