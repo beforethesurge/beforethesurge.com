@@ -3,7 +3,7 @@ title: HTTP Response Status Codes
 categories: [Networking,Web]
 ---
 
-# HTTP response status codes indicate whether a specific HTTP request has been successfully completed. Responses are grouped in five classes:
+## HTTP response status codes indicate whether a specific HTTP request has been successfully completed. Responses are grouped in five classes:
 
 1. Informational responses (`100` – `199`)
 2. Successful responses (`200` – `299`)
@@ -15,7 +15,10 @@ The status codes listed below are defined by RFC 9110
 
 >[!note]-
 >If you receive a response that is not in this list, it is a non-standard response, possibly custom to the server's software.
-## 100 - Information responses 
+
+---
+
+### 100 - Information responses 
 
 `100 Continue`
 └──>This interim response indicates that the client should continue the request or ignore the response if the request is already finished.
@@ -29,7 +32,9 @@ The status codes listed below are defined by RFC 9110
 `103 Early Hints`
 └──>This status code is primarily intended to be used with the `Link` header, letting the user agent start preloadingresources while the server prepares a response or preconnect to an origin from which the page will need resources.
 
-## 200 - Successful responses
+---
+
+### 200 - Successful responses
 
 `200 OK`
 └──>The request succeeded. The result meaning of "success" depends on the HTTP method:
@@ -66,7 +71,9 @@ The status codes listed below are defined by RFC 9110
 `226 IM Used
 └──>The server has fulfilled a `GET` request for the resource, and the response is a representation of the result of one or more instance-manipulations applied to the current instance.
 
-## 300 - Redirection messages
+---
+
+### 300 - Redirection messages
 
 `300 Multiple Choices`
 └──>The request has more than one possible response. The user agent or user should choose one of them. (There is no standardized way of choosing one of the responses, but HTML links to the possibilities are recommended so the user can pick.)
@@ -95,7 +102,9 @@ The status codes listed below are defined by RFC 9110
 `308 Permanent Redirect`
 └──>This means that the resource is now permanently located at another URI, specified by the `Location:` HTTP Response header. This has the same semantics as the `301 Moved Permanently` HTTP response code, with the exception that the user agent _must not_ change the HTTP method used: if a `POST` was used in the first request, a `POST` must be used in the second request.
 
-## 400 - Client error responses
+---
+
+### 400 - Client error responses
 
 `400 Bad Request`
 └──>The server cannot or will not process the request due to something that is perceived to be a client error (e.g., malformed request syntax, invalid request message framing, or deceptive request routing).
@@ -185,7 +194,9 @@ This response is sent when the web server, after performing [server-driven cont
 `451 Unavailable For Legal Reasons`
 └──>The user agent requested a resource that cannot legally be provided, such as a web page censored by a government.
 
-## 500 - Server error responses
+---
+
+### 500 - Server error responses
 
 `500 Internal Server Error`
 └──>The server has encountered a situation it does not know how to handle.
@@ -220,4 +231,6 @@ This response is sent when the web server, after performing [server-driven cont
 `511 Network Authentication Required`
 └──> Indicates that the client needs to authenticate to gain network access.
 
-###### Source : [HTTP response status codes - HTTP | MDN (mozilla.org)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
+---
+
+## Source : [HTTP response status codes - HTTP | MDN (mozilla.org)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)

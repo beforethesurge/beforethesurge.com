@@ -426,5 +426,160 @@ categories: [Commands,FortiOS]
 
 ---
 
+## Managed Devices
+### Managed FortiSwitches
+
+| Command | Description |
+| --- | --- |
+| `diagnose switch-controller switch-info mac-table` | Show managed FortiSwitch MAC address list. |
+| `diagnose switch-controller switch-info port-stats` | Show managed FortiSwitch port statistics. |
+| `diagnose switch-controller switch-info trunk status` | Show managed FortiSwitch trunk information. |
+| `diagnose switch-controller switch-info mclag` | Show MCLAG related information from FortiSwitch. |
+| `diagnose switch-controller switch-info poe` | Show POE-related information. |
+| `diagnose switch-controller switch-info lldp` | Show LLDP-related information. |
+| `diagnose switch-controller switch-info port-properties` | Show managed FortiSwitch port properties. |
+| `diagnose switch-controller switch-info acl-counters` | Show managed FortiSwitch port ACL counters information. |
+| `diagnose switch-controller switch-info pdu-counters-list` | Show managed FortiSwitch pdu-counters information. |
+| `diagnose switch-controller switch-info flapguard` | Show managed FortiSwitch flapguard information. |
+| `diagnose switch-controller switch-info qos-stats` | Show managed FortiSwitch QoS statistics. |
+| `diagnose switch-controller switch-info modules` | Show modules related information from FortiSwitch. |
+| `diagnose switch-controller switch-info stp` | Show managed FortiSwitch STP instance status. |
+| `diagnose switch-controller switch-info bpdu-guard-status` | Show managed FortiSwitch STP BPDU guard status. |
+| `diagnose switch-controller switch-info igmp-snooping` | Show managed FortiSwitch IGMP snooping information. |
+| `diagnose switch-controller switch-info loop-guard` | Show managed FortiSwitch loop-guard status. |
+| `diagnose switch-controller switch-info dhcp-snooping` | Show managed FortiSwitch DHCP snooping interface list. |
+| `diagnose switch-controller switch-info arp-inspection` | Show managed FortiSwitch ARP inspection interface list. |
+| `diagnose switch-controller switch-info option82-mapping` | Show managed FortiSwitch DHCP option 82 mapping information. |
+| `diagnose switch-controller switch-info 802.1X` | Show managed FortiSwitch port 802.1X status. |
+| `diagnose switch-controller switch-info 802.1X-dacl` | Show managed FortiSwitch port 802.1X dynamic ACL status. |
+| `diagnose switch-controller switch-info mac-limit-violations` | Show managed FortiSwitch violated MACs information. |
+| `diagnose switch-controller switch-info flow-tracking` | Show managed FortiSwitch flow information. |
+| `diagnose switch-controller switch-info mirror` | Show managed FortiSwitch mirror information. |
+| `diagnose switch-controller switch-info ip-source-guard` | Show managed FortiSwitch source guard information in hardware. |
+| `diagnose switch-controller switch-info rpvst` | Show managed FortiSwitch STP port information when inter-operating with rapid PVST network. |
+| `execute switch-controller get-conn-status <FortiSwitch-SN>` | Show FortiSwitch connection status. |
+| `execute switch-controller get-physical-conn standard <FortiSwitch-SN>` | Show FortiLink connectivity graph. |
+| `execute switch-controller diagnose-connection <FortiSwitch-SN>` | Show FortiSwitch connection diagnostics. |
+
+---
+
+### Managed FortiAPs
+
+| Command | Description |
+| --- | --- |
+| `diagnose wireless-controller wlac -c wtp` | Show information about the FortiAP devices. |
+| `diagnose wireless-controller wlac -d wtp` |  |
+| `diagnose wireless-controller wlac -c sta` | Show information about the wireless clients connected to the FortiAP devices. |
+| `diagnose wireless-controller wlac -d sta` |  |
+| `diagnose wireless-controller wlac help` | Show a list of debug options available for the wireless controller. |
+| `diagnose wireless-controller wlac sta_filter` | Start real-time debugging of a wireless client/station that connects to the FortiAP. |
+| `diagnose wireless-controller wlac sta_filter clear` |  |
+| `diagnose wireless-controller wlac sta_filter <aa:bb:cc:dd:ee:ff> 255` |  |
+| `diagnose debug enable` |  |
+| `diagnose wireless-controller wlac -c vap` | Show virtual access point information, including its MAC address, BSSID, SSID, the interface name, and the IP address of the APs that are broadcasting it. |
+| `diagnose wireless-controller wlac wtp_filter` | Show the wireless termination point (WTP), or FortiAP, debugging on the wireless controller if FortiAP is failing to connect to FortiGate. |
+| `diagnose wireless-controller wlac wtp_filter clear` |  |
+| `diagnose wireless-controller wlac wtp_filter <FAP-SN> 0-<x.x.x.x>:5246 255` |  |
+| `diagnose debug application cw_acd 0x7ff` |  |
+
+---
+
+## Other Services
+### High Availability
+
+| Command | Description |
+| --- | --- |
+| `diagnose system ha status` | Show HA status and information. |
+| `get system ha status` |  |
+| `execute ha manage <index> <username>` | Log into and manage a specific HA member. |
+| `diagnose sys ha checksum cluster` | Show checksum information of all cluster members. |
+| `diagnose sys ha checksum show <vdom>` | Show detailed checksum information for a VDOM. |
+| `diagnose sys ha checksum recalculate` | Recalculate HA checksums. |
+| `diagnose sys ha recalculate-extfile-signature` | Recalculate HA external files signatures. |
+| `diagnose sys ha reset-uptime` | Reset the HA uptime. This is used to test failover. |
+| `diagnose debug application hatalk -1` | Start real-time debugging of HA daemons. |
+| `diagnose debug application hasync -1` |  |
+| `diagnose debug application harelay -1` |  |
+| `diagnose debug enable` |  |
+| `diagnose sys ha history read` | Show HA history. |
+| `execute ha synchronize stop` | Manually start and stop HA synchronization. |
+| `execute ha synchronize start` |  |
+
+---
+
+### ZTNA
+
+| Command | Description |
+| --- | --- |
+| `diagnose endpoint fctems test-connectivity <EMS>` | Test FortiGate to FortiClient EMS connectivity. |
+| `execute fctems verify <EMS>` | Verify FortiClient EMS’s certificate. |
+| `diagnose test application fcnacd 2` | Show EMS connectivity information. |
+| `diagnose debug application fcnacd -1` | Start real-time debugging of FortiClient NAC daemon. |
+| `diagnose debug enable` |  |
+| `diagnose endpoint record list <ip>` | Show the endpoint record list. Optionally, filter by the endpoint IP address. |
+| `diagnose endpoint wad-comm find-by uid <uid>` | Query endpoints by client UID. |
+| `diagnose endpoint wad-comm find-by ip-vdom <ip> <vdom>` | Query endpoints by the client IP-VDOM pair. |
+| `diagnose wad dev query-by uid <uid>` | Query from WAD diagnose command by UID. |
+| `diagnose wad dev query-by ipv4 <ip>` | Query from WAD diagnose command by IP address. |
+| `diagnose firewall dynamic list` | Show EMS ZTNA tags and all dynamic IP and MAC addresses. |
+| `diagnose test application fcnacd 7` | Show the FortiClient NAC daemon ZTNA and route cache. |
+| `diagnose test application fcnacd 8` |  |
+| `diagnose wad debug display pid enable` | Start real-time debugging of the traffic processed by WAD daemon. |
+| `diagnose wad filter <filter>` |  |
+| `diagnose wad filter list` |  |
+| `diagnose wad debug enable level <level>` |  |
+| `diagnose wad debug enable category <category>` |  |
+| `diagnose debug enable` |  |
+
+---
+
+### Logging
+
+| Command | Description |
+| --- | --- |
+| `diagnose log test` | Generate logs for testing. |
+| `execute log filter <filter>` | Set log filters. |
+| `execute log filter` | Show log filters. |
+| `exec log display` | Show filtered logs. |
+| `execute log delete` | Delete filtered logs. |
+| `diagnose debug application miglogd -1` | Start real-time debugging of logging process miglogd. |
+| `diagnose debug enable` |  |
+| `execute log fortianalyzer test-connectivity` | Test connectivity between FortiGate and FortiAnalyzer. |
+
+---
+
+### Traffic Shaping
+
+| Command | Description |
+| --- | --- |
+| `diagnose firewall shaper traffic-shaper list` | Show configured traffic shapers. |
+| `diagnose firewall shaper traffic-shaper stats list` | Show traffic shaper statistics. |
+
+---
+
+### SIP Session Helper
+
+| Command | Description |
+| --- | --- |
+| `diagnose sys sip status` | Show SIP status. |
+| `diagnose sys sip mapping list` | Show SIP mapping list. |
+| `diagnose sys sip dialog list` | Show SIP dialogue list. |
+| `diagnose debug application sip -1` | Start real-time SIP debugging. |
+| `diagnose debug enable` |  |
+
+---
+
+### SIP ALG
+
+| Command | Description |
+| --- | --- |
+| `diagnose sys sip-proxy calls list` | Show list of active SIP proxy calls. |
+| `diagnose sys sip-proxy stats` | Show SIP proxy statistics. |
+| `diagnose sys sip-proxy session list` | Show SIP proxy session list. |
+| `diagnose debug application sip -1` | Start real-time SIP debugging. |
+| `diagnose debug enable` |  |
+
+---
+
 ## Source
 * [FortiGate - CLI Cheat Sheet](https://docs.fortinet.com/document/fortigate/7.4.0/cli-troubleshooting-cheat-sheet/420966/cli-troubleshooting-cheat-sheet)

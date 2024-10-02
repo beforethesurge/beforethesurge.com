@@ -19,5 +19,5 @@ categories: [OS,Linux]
 
 # Export Environment Variables (only if running code, not code-oss)
 #export DONT_PROMPT_WSL_INSTALL=1
-#export ~/.local/bin #use this if installing pwncat-cs in Kali
+#export PATH=$PATH:~/.local/bin #use this if installing pwncat-cs in Kali
 ```
