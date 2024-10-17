@@ -259,6 +259,13 @@ Get-CimInstance -ClassName win32_processor | Measure-Object -Property LoadPercen
 
 ---
 
+## Install Appinstaller Package
+```powershell
+Add-AppxPackage -Appinstaller <path-to-your-appinstaller-file>
+```
+
+---
+
 ## Sync Changes to Azure
 * **This changes for all changed**
   ```powershell
