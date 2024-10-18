@@ -169,6 +169,11 @@ Remove-PrinterDriver -Name "NAMEOFDRIVER"
 Test-ComputerSecureChannel -Verbose
 ```
 
+## Active Directory Password Policy
+```powershell
+Get-ADDefaultDomainPasswordPolicy
+```
+
 ---
 
 ## Re-Add Computer to Domain (PS)
