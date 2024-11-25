@@ -42,7 +42,9 @@ categories: [Networking]
 8.  **Check for Interference**
     - Ensure there are no physical obstructions or electronic devices causing interference with the Wi-Fi signal.
     - Next step may be a bit more advanced as this is more dealing with 2.4 GHz and 5 GHz frequencies (feel free to skip)
-        - Try changing the Wi-Fi channel on the router.
+        - Try changing the Wi-Fi channel on the device (Most networks will have a clear distinction for which channel they belong to).
+        - Example: Secure (5 GHz), Guest (2.4 GHz) | On the SSID could be a clear 2.4 GHz or a "-5" after the name fpr 5 GHz
+        - Note, this may sometimes not be the case, but is common
 
 9.  **Contact ISP**
     - If all else fails, contact the Internet Service Provider (ISP) to check for outages or issues on their end.
