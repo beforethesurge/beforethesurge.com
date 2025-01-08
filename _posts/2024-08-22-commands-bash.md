@@ -60,3 +60,17 @@ chsh -s $(which zsh)
 ```bash
 echo $SHELL
 ```
+
+---
+
+## Create Symlink File
+```bash
+ln -s PATHTOFILETOLINK PATHTOSAVELINK
+```
+
+---
+
+## Tar Decompression
+```bash
+tar -xzvf archive.tar.gz -C PATHTODIRECTORY
+```
