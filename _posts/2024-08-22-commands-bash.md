@@ -9,7 +9,7 @@ categories: [Commands,Bash]
 sudo dpkg --add-architecture i386
 ```
 
-**Note:** Make sure you update after change. This also needs to have contrib repo added to `/etc/apt/sources.list` (can also add non-free).
+- **Note:** Make sure you update after change. This also needs to have contrib repo added to `/etc/apt/sources.list` (can also add non-free).
 
 ---
 
@@ -19,7 +19,7 @@ sudo dpkg --add-architecture i386
 redshift -O 3500K -r -P
 ```
 
-Install QRedshift to avoid this issue if applicable.
+- Install QRedshift to avoid this issue if applicable.
 
 ---
 
@@ -90,3 +90,14 @@ ln -s PATHTOFILETOLINK PATHTOSAVELINK
 ```bash
 tar -xzvf archive.tar.gz -C PATHTODIRECTORY
 ```
+
+---
+
+## Chaining Grep
+
+```bash
+grep -e bash -e rc
+```
+
+- Works like an AND/OR search
+- Finds folders/files that have "bash", "rc" and "bashrc" in it
