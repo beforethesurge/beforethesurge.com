@@ -6,6 +6,7 @@ categories: [OS,Windows]
 ## Format Drive (if unable to find valid Drive/Disk)
 
 1. Open Command Prompt and type:
+
     ```sh
     diskpart
     list disk
@@ -27,13 +28,17 @@ categories: [OS,Windows]
 
 1. Press `Shift + F10` to open Command Prompt.
 2. Type:
+
     ```sh
     regedit
     ```
+
 3. Navigate to:
+
     ```
     HKEY_LOCAL_MACHINE/SYSTEM/SETUP
     ```
+
 4. Create a folder named `LabConfig`.
 5. Create DWORD entries for all files and set their values to `1`:
     - `BypassTPMCheck`
@@ -43,10 +48,11 @@ categories: [OS,Windows]
 
 ---
 
-## Bypass Microsoft Account:
+## Bypass Microsoft Account
 
 1. Press `Shift + F10` to open Command Prompt.
 2. Type:
+
     ```sh
     oobe\bypassnro
     ```

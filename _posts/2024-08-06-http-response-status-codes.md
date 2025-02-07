@@ -3,7 +3,7 @@ title: HTTP Response Status Codes
 categories: [Networking,Web]
 ---
 
-## HTTP response status codes indicate whether a specific HTTP request has been successfully completed. Responses are grouped in five classes:
+## HTTP response status codes indicate whether a specific HTTP request has been successfully completed. Responses are grouped in five classes
 
 1. Informational responses (`100` – `199`)
 2. Successful responses (`200` – `299`)
@@ -18,7 +18,7 @@ The status codes listed below are defined by RFC 9110
 
 ---
 
-### 100 - Information responses 
+### 100 - Information responses
 
 `100 Continue`
 └──>This interim response indicates that the client should continue the request or ignore the response if the request is already finished.
@@ -66,10 +66,10 @@ The status codes listed below are defined by RFC 9110
 └──>Conveys information about multiple resources, for situations where multiple status codes might be appropriate.
 
 `208 Already Reported
-└──>Used inside a `<dav:propstat>` response element to avoid repeatedly enumerating the internal members of multiple bindings to the same collection.
+└──>Used inside a`<dav:propstat>` response element to avoid repeatedly enumerating the internal members of multiple bindings to the same collection.
 
 `226 IM Used
-└──>The server has fulfilled a `GET` request for the resource, and the response is a representation of the result of one or more instance-manipulations applied to the current instance.
+└──>The server has fulfilled a`GET` request for the resource, and the response is a representation of the result of one or more instance-manipulations applied to the current instance.
 
 ---
 

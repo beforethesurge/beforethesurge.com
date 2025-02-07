@@ -6,6 +6,7 @@ categories: [OS,Windows]
 ## Ram Clear Cache
 
 1. Create a new shortcut and enter the following path:
+
     ```sh
     %windir%\system32\rundll32.exe advapi32.dll,ProcessIdleTasks
     ```
@@ -13,9 +14,11 @@ categories: [OS,Windows]
 ## Mini-Tray Clear Duplicates (Batch)
 
 1. Open Command Prompt and type:
+
     ```sh
     reg.exe delete "HKCU\Control Panel\NotifyIconSettings" /f
     ```
+
 2. You may need to restart Windows Explorer (it should do it automatically).
 
 ---
@@ -33,11 +36,14 @@ categories: [OS,Windows]
 
 1. Open Terminal as Administrator.
 2. Type:
+
     ```sh
     net user Administrator /active:yes
     ```
+
 3. To disable, set "yes" to "no".
 4. Set password:
+
     ```sh
     net user administrator *
     ```

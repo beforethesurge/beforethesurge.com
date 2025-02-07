@@ -4,7 +4,9 @@ categories: [Ethical Hacking, Recon, Feroxbuster]
 ---
 
 ## Used for Directory Searching Websites
+
 Includes:
+
 - Excluded HTTP Error Codes
 - Extension File (will need to point this to one you have)
 - Output File

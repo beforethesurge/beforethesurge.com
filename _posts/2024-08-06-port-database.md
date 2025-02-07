@@ -69,5 +69,5 @@ categories: [Networking,Web]
 | 31337 | Back Orifice | unofficial | Back Orifice 2000 remote administration tools |
 
 High-end Port Numbers:
-	If you see higher-end port numbers that look really strange, they're typically used in AWS as virtual ports (more back-end interfacing)
-		i.e : `49663 or 49667`
+ If you see higher-end port numbers that look really strange, they're typically used in AWS as virtual ports (more back-end interfacing)
+  i.e : `49663 or 49667`

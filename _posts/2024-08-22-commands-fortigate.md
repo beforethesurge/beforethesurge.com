@@ -15,6 +15,7 @@ categories: [Commands,FortiOS]
 ---
 
 ## System
+
 ### System
 
 | Command | Description |
@@ -243,6 +244,7 @@ categories: [Commands,FortiOS]
 ---
 
 ## Routing
+
 ### IPv4 and IPv6 Routing
 
 | Command | Description |
@@ -384,6 +386,7 @@ categories: [Commands,FortiOS]
 ---
 
 ## VPN
+
 ### IPsec
 
 | Command | Description |
@@ -427,6 +430,7 @@ categories: [Commands,FortiOS]
 ---
 
 ## Managed Devices
+
 ### Managed FortiSwitches
 
 | Command | Description |
@@ -485,6 +489,7 @@ categories: [Commands,FortiOS]
 ---
 
 ## Other Services
+
 ### High Availability
 
 | Command | Description |
@@ -582,4 +587,5 @@ categories: [Commands,FortiOS]
 ---
 
 ## Source
+
 * [FortiGate - CLI Cheat Sheet](https://docs.fortinet.com/document/fortigate/7.4.0/cli-troubleshooting-cheat-sheet/420966/cli-troubleshooting-cheat-sheet)
