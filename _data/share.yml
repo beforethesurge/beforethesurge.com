@@ -2,6 +2,10 @@
 #  Icons from <https://fontawesome.com/>
 
 platforms:
+  - type: Indeed
+    icon: "fa-solid fa-info"
+    link: "https://profile.indeed.com/p/thomash-71yss00"
+
   - type: Twitter
     icon: "fa-brands fa-square-x-twitter"
     link: "https://twitter.com/intent/tweet?text=TITLE&url=URL"
