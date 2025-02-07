@@ -1,5 +1,5 @@
 ---
-title: Commands (PowerShell)
+title: Powershell - Get/Set-ExecutionPolicy
 categories: [Commands,PowerShell]
 ---
 
