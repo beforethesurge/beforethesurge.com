@@ -7,11 +7,11 @@ categories: [Networking,Web]
 
 ### Responses are grouped in five classes:
 
-1. Informational responses (`100` – `199`)
-2. Successful responses (`200` – `299`)
-3. Redirection messages (`300` – `399`)
-4. Client error responses (`400` – `499`)
-5. Server error responses (`500` – `599`)
+#### 1. Informational responses (`100` – `199`)
+#### 2. Successful responses (`200` – `299`)
+#### 3. Redirection messages (`300` – `399`)
+#### 4. Client error responses #(`400` – `499`)
+#### 5. Server error responses (`500` – `599`)
 
 The status codes listed below are defined by [RFC 9110](https://datatracker.ietf.org/doc/html/rfc9110) (click [here](https://developer.mozilla.org/en-US/docs/Web/HTTP/Resources_and_specifications) for details on all HTTP specifications)
 
