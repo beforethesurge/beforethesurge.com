@@ -235,4 +235,5 @@ The status codes listed below are defined by [RFC 9110](https://datatracker.iet
 ---
 
 ### Source:
-- [HTTP response status codes - HTTP | MDN (mozilla.org)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
+
+[HTTP response status codes - HTTP | MDN (mozilla.org)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
