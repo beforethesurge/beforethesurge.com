@@ -7,7 +7,7 @@ categories: [OS,Windows]
 
 1. Open Command Prompt and type:
 
-    ```sh
+    ```cmd
     diskpart
     list disk
     select disk NUMOFDISK
@@ -15,7 +15,7 @@ categories: [OS,Windows]
 
     **NOTE: BELOW THIS POINT, THESE COMMANDS WILL WIPE THE CONTENTS OF THE DRIVE**
 
-    ```sh
+    ```cmd
     clean
     create partition primary
     assign letter=LETTER
@@ -29,7 +29,7 @@ categories: [OS,Windows]
 1. Press `Shift + F10` to open Command Prompt.
 2. Type:
 
-    ```sh
+    ```cmd
     regedit
     ```
 
@@ -53,6 +53,6 @@ categories: [OS,Windows]
 1. Press `Shift + F10` to open Command Prompt.
 2. Type:
 
-    ```sh
+    ```cmd
     oobe\bypassnro
     ```

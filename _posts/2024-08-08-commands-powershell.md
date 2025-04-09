@@ -1,11 +1,11 @@
 ---
-title: Commands (PowerShell)
-categories: [Commands,PowerShell]
+title: Commands (CMD, PowerShell)
+categories: [Commands,CMD]
 ---
 
 ## Show General System Information (OS, Boot-time, Specs, NIC, Hyper-V Req)
 
-```powershell
+```cmd
 systeminfo
 ```
 
@@ -15,13 +15,13 @@ systeminfo
 
 **Hostname:** Shows hostname of computer
 
-```powershell
+```cmd
 hostname
 ```
 
 **Serial Number:** Shows S/N of computer
 
-```powershell
+```cmd
 wmic bios get serialnumber
 ```
 
@@ -31,19 +31,19 @@ wmic bios get serialnumber
 
 * **Continuous Ping**
 
-  ```powershell
+  ```cmd
   ping –t X.X.X.X
   ```
 
 * **Pull DNS info from Ping** (alternatively, use nslookup)
 
-  ```powershell
+  ```cmd
   ping –a X.X.X.X
   ```
 
 * **Ping a certain amount of packets** (Example: 60 packets [good for flapping alerts])
 
-  ```powershell
+  ```cmd
   ping X.X.X.X –n 60
   ```
 
@@ -53,13 +53,13 @@ wmic bios get serialnumber
 
 * **Normal trace**
 
-  ```powershell
+  ```cmd
   tracert X.X.X.X
   ```
 
 * **If unable to resolve hostname**
 
-  ```powershell
+  ```cmd
   tracert X.X.X.X -d
   ```
 
@@ -67,7 +67,7 @@ wmic bios get serialnumber
 
 ## Shows Network Drives Connected to User
 
-```powershell
+```cmd
 net use
 ```
 
@@ -77,13 +77,13 @@ net use
 
 * **Shows all Group Policies for computer/user**
 
-  ```powershell
+  ```cmd
   gpresult /r
   ```
 
 * **Update GPO**
 
-  ```powershell
+  ```cmd
   gpupdate /force
   ```
 
@@ -93,7 +93,7 @@ net use
 
 * **Note:** To save time (and patience), use this version of these commands
 
-  ```powershell
+  ```cmd
   sfc /scannow & sfc /scannow & DISM /Online /Cleanup-Image /RestoreHealth & sfc /scannow
   ```
 
@@ -101,19 +101,19 @@ net use
   sfc /scannow; sfc /scannow; DISM /Online /Cleanup-Image /RestoreHealth; sfc /scannow
   ```
 
-  ```powershell
+  ```cmd
   sfc /scannow
   ```
 
-  ```powershell
+  ```cmd
   DISM /Online /Cleanup-Image /CheckHealth
   ```
 
-  ```powershell
+  ```cmd
   DISM /Online /Cleanup-Image /ScanHealth
   ```
 
-  ```powershell
+  ```cmd
   DISM /Online /Cleanup-Image /RestoreHealth
   ```
 
@@ -123,7 +123,7 @@ net use
 
 ## DISM to Free-Up Space in WinSxS
 
-```powershell
+```cmd
 DISM /online /Cleanup-Image /StartComponentCleanup
 ```
 
@@ -135,19 +135,19 @@ DISM /online /Cleanup-Image /StartComponentCleanup
 
 * **Wipes DNS Cache in Windows**
 
-  ```powershell
+  ```cmd
   ipconfig /flushdns
   ```
 
 * **Renews IP Address** (Will boot you off if remoted in)
 
-  ```powershell
+  ```cmd
   ipconfig /release & ipconfig /renew
   ```
 
 * **Shows IPv4, IPv6, DNS, etc.**
 
-  ```powershell
+  ```cmd
   ipconfig /all
   ```
 
@@ -155,11 +155,11 @@ DISM /online /Cleanup-Image /StartComponentCleanup
 
 ## Find/Logoff User
 
-```powershell
+```cmd
 query user
 ```
 
-```powershell
+```cmd
 logoff IDOFUSER
 ```
 
@@ -167,11 +167,11 @@ logoff IDOFUSER
 
 ## Find/Reset Password
 
-```powershell
+```cmd
 query user
 ```
 
-```powershell
+```cmd
 net user 'USER' 'PASS'
 ```
 
@@ -179,7 +179,7 @@ net user 'USER' 'PASS'
 
 ## Check for Email Domain on Server (PS)
 
-```powershell
+```cmd
 Get-Recipient emailaddress@company.com
 ```
 
@@ -241,7 +241,7 @@ Reset-ComputerMachinePassword -Server {DomainController} -Credential {DomainAdmi
 
 ## Check Route Table
 
-```powershell
+```cmd
 netstat -r
 ```
 
@@ -259,7 +259,7 @@ netstat -r
 
 ## Clear ARP Table
 
-```powershell
+```cmd
 arp -d *
 ```
 
@@ -271,7 +271,7 @@ arp -d *
 
 * **Windows**
 
-  ```powershell
+  ```cmd
   netstat -ano | findstr "443"
   ```
 
@@ -307,15 +307,15 @@ arp -d *
 
 * **CMD**
 
-  ```powershell
+  ```cmd
   netsh interface show interface
   ```
 
-  ```powershell
+  ```cmd
   netsh interface set interface INTERFACE disable
   ```
 
-  ```powershell
+  ```cmd
   netsh interface set interface INTERFACE enable
   ```
 
@@ -323,7 +323,7 @@ arp -d *
 
 ## Find TXT Records of Domain (example is DMARC)
 
-```powershell
+```cmd
 nslookup -type=txt _dmarc.domain.com
 ```
 
@@ -365,7 +365,7 @@ Add-AppxPackage -Appinstaller <path-to-your-appinstaller-file>
 
 ## Find FQDN (Fully Qualified Domain Name) of Host (PS)
 
-```powershell
+```cmd
 [System.Net.Dns]::GetHostByName($env:COMPUTERNAME).HostName
 ```
 
@@ -373,7 +373,7 @@ Add-AppxPackage -Appinstaller <path-to-your-appinstaller-file>
 
 ## Find File (PS)
 
-```powershell
+```cmd
 gci -r -fi '*.EXTENSION'
 ```
 
@@ -417,13 +417,13 @@ Test-ComputerSecureChannel -Verbose
 
 ## Resync Time
 
-```powershell
+```cmd
 net stop w32time && w32tm /unregister && w32tm /register && net start w32time && w32tm /resync && tzutil /s "Eastern Standard Time"
 ```
 
 * **For a list of Time Zones, run:**
 
-  ```powershell
+  ```cmd
   tzutil /l
   ```
 
@@ -431,7 +431,7 @@ net stop w32time && w32tm /unregister && w32tm /register && net start w32time &&
 
 ## Open Network Routing Tables
 
-```powershell
+```cmd
 route print
 ```
 
