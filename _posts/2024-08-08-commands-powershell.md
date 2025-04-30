@@ -365,7 +365,7 @@ Add-AppxPackage -Appinstaller <path-to-your-appinstaller-file>
 
 ## Find FQDN (Fully Qualified Domain Name) of Host (PS)
 
-```cmd
+```powershell
 [System.Net.Dns]::GetHostByName($env:COMPUTERNAME).HostName
 ```
 
@@ -373,7 +373,7 @@ Add-AppxPackage -Appinstaller <path-to-your-appinstaller-file>
 
 ## Find File (PS)
 
-```cmd
+```powershell
 gci -r -fi '*.EXTENSION'
 ```
 
@@ -417,13 +417,13 @@ Test-ComputerSecureChannel -Verbose
 
 ## Resync Time
 
-```cmd
+```c++
 net stop w32time && w32tm /unregister && w32tm /register && net start w32time && w32tm /resync && tzutil /s "Eastern Standard Time"
 ```
 
 * **For a list of Time Zones, run:**
 
-  ```cmd
+  ```c++
   tzutil /l
   ```
 
@@ -431,7 +431,7 @@ net stop w32time && w32tm /unregister && w32tm /register && net start w32time &&
 
 ## Open Network Routing Tables
 
-```cmd
+```c++
 route print
 ```
 
@@ -466,12 +466,5 @@ Get-Volume C
 ## Download File Over HTTP
 
 ```powershell
-# Source file location
-$source = "http://example.com/file.zip"
-
-# Destination to save the file
-$destination = "C:\\path\\to\\save\\file.zip"
-
-# Download the file
-Invoke-WebRequest -Uri $source -OutFile $destination
+Invoke-WebRequest -Uri "http://example.com/file.zip" -OutFile "C:\\path\\to\\save\\file.zip"
 ```

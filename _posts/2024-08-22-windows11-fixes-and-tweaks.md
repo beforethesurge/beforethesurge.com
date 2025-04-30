@@ -7,7 +7,7 @@ categories: [OS,Windows]
 
 1. Create a new shortcut and enter the following path:
 
-    ```cmd
+    ```c++
     %windir%\system32\rundll32.exe advapi32.dll,ProcessIdleTasks
     ```
 
@@ -15,7 +15,7 @@ categories: [OS,Windows]
 
 1. Open Command Prompt and type:
 
-    ```cmd
+    ```c++
     reg.exe delete "HKCU\Control Panel\NotifyIconSettings" /f
     ```
 
@@ -37,14 +37,14 @@ categories: [OS,Windows]
 1. Open Terminal as Administrator.
 2. Type:
 
-    ```cmd
+    ```c++
     net user Administrator /active:yes
     ```
 
 3. To disable, set "yes" to "no".
 4. Set password:
 
-    ```cmd
+    ```c++
     net user administrator *
     ```
 

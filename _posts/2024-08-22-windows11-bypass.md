@@ -7,7 +7,7 @@ categories: [OS,Windows]
 
 1. Open Command Prompt and type:
 
-    ```cmd
+    ```c++
     diskpart
     list disk
     select disk NUMOFDISK
@@ -15,7 +15,7 @@ categories: [OS,Windows]
 
     **NOTE: BELOW THIS POINT, THESE COMMANDS WILL WIPE THE CONTENTS OF THE DRIVE**
 
-    ```cmd
+    ```c++
     clean
     create partition primary
     assign letter=LETTER
@@ -29,17 +29,14 @@ categories: [OS,Windows]
 1. Press `Shift + F10` to open Command Prompt.
 2. Type:
 
-    ```cmd
+    ```c++
     regedit
     ```
 
-3. Navigate to:
-
-    ```
-    HKEY_LOCAL_MACHINE/SYSTEM/SETUP
-    ```
+3. Navigate to `HKEY_LOCAL_MACHINE/SYSTEM/SETUP`
 
 4. Create a folder named `LabConfig`.
+
 5. Create DWORD entries for all files and set their values to `1`:
     - `BypassTPMCheck`
     - `BypassRAMCheck`
@@ -52,10 +49,11 @@ categories: [OS,Windows]
 
 **Note**: Since Microsoft patched this out in KB5054687, see below for current working method (credit to *the-P1neapple*)
 
-1. Press `Shift + F10` to open Command Prompt.
-2. Type:
+~~1. Press `Shift + F10` to open Command Prompt.~~
 
-    ```cmd
+~~2. Type:~~
+
+    ```c++
     oobe\bypassnro
     ```
 
@@ -64,13 +62,13 @@ categories: [OS,Windows]
 1. Press `Shift + F10` or `Ctrl + Shift + J` to open console
 2. Type:
 
-```cmd
+```c++
 start ms-cxh:localonly
 ```
 
 Or:
 
-```cmd
+```c++
 WinJS.Application.restart("ms-cxh://LOCALONLY")
 ```
 
