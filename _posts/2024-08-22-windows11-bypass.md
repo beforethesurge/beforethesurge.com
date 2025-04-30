@@ -50,9 +50,30 @@ categories: [OS,Windows]
 
 ## Bypass Microsoft Account
 
+**Note**: Since Microsoft patched this out in KB5054687, see below for current working method (credit to *the-P1neapple*)
+
 1. Press `Shift + F10` to open Command Prompt.
 2. Type:
 
     ```cmd
     oobe\bypassnro
     ```
+
+---
+
+1. Press `Shift + F10` or `Ctrl + Shift + J` to open console
+2. Type:
+
+```cmd
+start ms-cxh:localonly
+```
+
+Or:
+
+```cmd
+WinJS.Application.restart("ms-cxh://LOCALONLY")
+```
+
+## Source
+
+- [the-P1neapple - WinJS-Microsoft-Account-Bypass](https://github.com/the-P1neapple/WinJS-Microsoft-Account-Bypass)
