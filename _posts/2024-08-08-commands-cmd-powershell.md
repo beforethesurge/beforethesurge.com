@@ -5,7 +5,7 @@ categories: [Commands,CMD]
 
 ## Show General System Information (OS, Boot-time, Specs, NIC, Hyper-V Req)
 
-```cmd
+```c++
 systeminfo
 ```
 
@@ -15,13 +15,13 @@ systeminfo
 
 **Hostname:** Shows hostname of computer
 
-```cmd
+```c++
 hostname
 ```
 
 **Serial Number:** Shows S/N of computer
 
-```cmd
+```c++
 wmic bios get serialnumber
 ```
 
@@ -29,21 +29,21 @@ wmic bios get serialnumber
 
 ## Ping
 
-* **Continuous Ping**
+- **Continuous Ping**
 
-  ```cmd
+  ```c++
   ping –t X.X.X.X
   ```
 
-* **Pull DNS info from Ping** (alternatively, use nslookup)
+- **Pull DNS info from Ping** (alternatively, use nslookup)
 
-  ```cmd
+  ```c++
   ping –a X.X.X.X
   ```
 
-* **Ping a certain amount of packets** (Example: 60 packets [good for flapping alerts])
+- **Ping a certain amount of packets** (Example: 60 packets [good for flapping alerts])
 
-  ```cmd
+  ```c++
   ping X.X.X.X –n 60
   ```
 
@@ -51,15 +51,15 @@ wmic bios get serialnumber
 
 ## Traceroute
 
-* **Normal trace**
+- **Normal trace**
 
-  ```cmd
+  ```c++
   tracert X.X.X.X
   ```
 
-* **If unable to resolve hostname**
+- **If unable to resolve hostname**
 
-  ```cmd
+  ```c++
   tracert X.X.X.X -d
   ```
 
@@ -67,7 +67,7 @@ wmic bios get serialnumber
 
 ## Shows Network Drives Connected to User
 
-```cmd
+```c++
 net use
 ```
 
@@ -75,15 +75,15 @@ net use
 
 ## GPO
 
-* **Shows all Group Policies for computer/user**
+- **Shows all Group Policies for computer/user**
 
-  ```cmd
+  ```c++
   gpresult /r
   ```
 
-* **Update GPO**
+- **Update GPO**
 
-  ```cmd
+  ```c++
   gpupdate /force
   ```
 
@@ -91,9 +91,9 @@ net use
 
 ## Computer Running Slow - SFC/DISM
 
-* **Note:** To save time (and patience), use this version of these commands
+- **Note:** To save time (and patience), use this version of these commands
 
-  ```cmd
+  ```c++
   sfc /scannow & sfc /scannow & DISM /Online /Cleanup-Image /RestoreHealth & sfc /scannow
   ```
 
@@ -101,53 +101,53 @@ net use
   sfc /scannow; sfc /scannow; DISM /Online /Cleanup-Image /RestoreHealth; sfc /scannow
   ```
 
-  ```cmd
+  ```c++
   sfc /scannow
   ```
 
-  ```cmd
+  ```c++
   DISM /Online /Cleanup-Image /CheckHealth
   ```
 
-  ```cmd
+  ```c++
   DISM /Online /Cleanup-Image /ScanHealth
   ```
 
-  ```cmd
+  ```c++
   DISM /Online /Cleanup-Image /RestoreHealth
   ```
 
-* **Reboot**
+- **Reboot**
 
 ---
 
 ## DISM to Free-Up Space in WinSxS
 
-```cmd
+```c++
 DISM /online /Cleanup-Image /StartComponentCleanup
 ```
 
-* **Note:** The above command does not seem to work in Backstage (may be able to test with user-specific session)
+- **Note:** The above command does not seem to work in Backstage (may be able to test with user-specific session)
 
 ---
 
 ## IPConfig
 
-* **Wipes DNS Cache in Windows**
+- **Wipes DNS Cache in Windows**
 
-  ```cmd
+  ```c++
   ipconfig /flushdns
   ```
 
-* **Renews IP Address** (Will boot you off if remoted in)
+- **Renews IP Address** (Will boot you off if remoted in)
 
-  ```cmd
+  ```c++
   ipconfig /release & ipconfig /renew
   ```
 
-* **Shows IPv4, IPv6, DNS, etc.**
+-**Shows IPv4, IPv6, DNS, etc.**
 
-  ```cmd
+  ```c++
   ipconfig /all
   ```
 
@@ -155,11 +155,11 @@ DISM /online /Cleanup-Image /StartComponentCleanup
 
 ## Find/Logoff User
 
-```cmd
+```c++
 query user
 ```
 
-```cmd
+```c++
 logoff IDOFUSER
 ```
 
@@ -167,11 +167,11 @@ logoff IDOFUSER
 
 ## Find/Reset Password
 
-```cmd
+```c++
 query user
 ```
 
-```cmd
+```c++
 net user 'USER' 'PASS'
 ```
 
@@ -179,7 +179,7 @@ net user 'USER' 'PASS'
 
 ## Check for Email Domain on Server (PS)
 
-```cmd
+```powershell
 Get-Recipient emailaddress@company.com
 ```
 
@@ -191,7 +191,7 @@ Get-Recipient emailaddress@company.com
 Get-Printer | Format-Table
 ```
 
-* **If you only need the Name/Driver Name**
+- **If you only need the Name/Driver Name**
 
   ```powershell
   Get-Printer | Format-Table Name, DriverName
@@ -231,7 +231,7 @@ Get-ADDefaultDomainPasswordPolicy
 Reset-ComputerMachinePassword -Server {DomainController} -Credential {DomainAdmin}
 ```
 
-* **Example:**
+- **Example:**
 
   ```powershell
   Reset-ComputerMachinePassword -Server lon-dc01 -Credential corp\dsmith
@@ -241,53 +241,35 @@ Reset-ComputerMachinePassword -Server {DomainController} -Credential {DomainAdmi
 
 ## Check Route Table
 
-```cmd
+```c++
 netstat -r
 ```
-
-* **Cisco/Possibly Fortinet?**
-
-  ```shell
-  show ip route
-  ```
-
-  ```shell
-  get router info routing-table all
-  ```
 
 ---
 
 ## Clear ARP Table
 
-```cmd
+```c++
 arp -d *
 ```
 
-* **Can be used to solve connectivity issues internally**
+- **Can be used to solve connectivity issues internally**
 
 ---
 
 ## Check Current Running Connections (at current time [will not update unless ran again])
 
-* **Windows**
-
-  ```cmd
+  ```c++
   netstat -ano | findstr "443"
   ```
 
-* **Linux**
-
-  ```bash
-  netstat -ano | grep "443"
-  ```
-
-* **Note:** TCPLogView may be a useful tool for logging data over time
+- **Note:** TCPLogView may be a useful tool for logging data over time
 
 ---
 
 ## Find & Cycle Network Adapter
 
-* **PowerShell**
+- **PowerShell**
 
   ```powershell
   Get-NetAdapter | format-table
@@ -305,17 +287,17 @@ arp -d *
   Restart-NetAdapter
   ```
 
-* **CMD**
+- **CMD**
 
-  ```cmd
+  ```c++
   netsh interface show interface
   ```
 
-  ```cmd
+  ```c++
   netsh interface set interface INTERFACE disable
   ```
 
-  ```cmd
+  ```c++
   netsh interface set interface INTERFACE enable
   ```
 
@@ -323,11 +305,11 @@ arp -d *
 
 ## Find TXT Records of Domain (example is DMARC)
 
-```cmd
+```c++
 nslookup -type=txt _dmarc.domain.com
 ```
 
-* **Note:** This should work for other text records too if you know which one you're looking for
+- **Note:** This should work for other text records too if you know which one you're looking for
 
 ---
 
@@ -349,13 +331,13 @@ Add-AppxPackage -Appinstaller <path-to-your-appinstaller-file>
 
 ## Sync Changes to Azure
 
-* **This changes for all changed**
+- **This changes for all changed**
 
   ```powershell
   Start ADSyncSyncCycle
   ```
 
-* **This changes for a specific policy**
+- **This changes for a specific policy**
 
   ```powershell
   Start ADSyncSyncCycle –PolicyType delta
@@ -381,19 +363,19 @@ gci -r -fi '*.EXTENSION'
 
 ## Get and Restart Service (PS)
 
-* **Get Service**
+- **Get Service**
 
   ```powershell
   Get-Service -Name NAME
   ```
 
-* **Restart Service**
+- **Restart Service**
 
   ```powershell
   Restart-Service NAME
   ```
 
-* **Example: Restart Print Spooler**
+- **Example: Restart Print Spooler**
 
   ```powershell
   Restart-Service Spooler
@@ -407,7 +389,7 @@ gci -r -fi '*.EXTENSION'
 Test-ComputerSecureChannel -Verbose
 ```
 
-* **If above is True, everything should be fine | If False, run the below command**
+- **If above is True, everything should be fine | If False, run the below command**
 
   ```powershell
   Test-ComputerSecureChannel -Repair -Credential (Get-Credential)
@@ -421,7 +403,7 @@ Test-ComputerSecureChannel -Verbose
 net stop w32time && w32tm /unregister && w32tm /register && net start w32time && w32tm /resync && tzutil /s "Eastern Standard Time"
 ```
 
-* **For a list of Time Zones, run:**
+- **For a list of Time Zones, run:**
 
   ```c++
   tzutil /l
@@ -440,16 +422,8 @@ route print
 ## Remove Folder/Files (PS)
 
 ```powershell
-Remove-Item FOLDERNAME
+Remove-Item FOLDERNAME/FILENAME
 ```
-
-* **Alias if used to Linux/BASH for deleting folder with items still inside**
-
-  ```bash
-  rm -rfo
-  ```
-
-  * **-rfo = Recursively run through folder (childed contents inside folder) and Force this command to run under -o = Path to file/folder**
 
 ---
 
@@ -459,7 +433,7 @@ Remove-Item FOLDERNAME
 Get-Volume C
 ```
 
-* **Can change "C" for other drive letters**
+- **Can change "C" for other drive letters**
 
 ---
 
@@ -467,4 +441,10 @@ Get-Volume C
 
 ```powershell
 Invoke-WebRequest -Uri "http://example.com/file.zip" -OutFile "C:\\path\\to\\save\\file.zip"
+```
+
+## List Environment Variables
+
+```powershell
+Get-ChildItem Env:
 ```

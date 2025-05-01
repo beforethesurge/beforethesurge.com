@@ -101,3 +101,11 @@ grep -e bash -e rc
 
 - Works like an AND/OR search
 - Finds folders/files that have "bash", "rc" and "bashrc" in it
+
+---
+
+## Check Current Running Connections (at current time [will not update unless ran again])
+
+```bash
+netstat -ano | grep "443"
+```
