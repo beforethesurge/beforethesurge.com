@@ -3,9 +3,7 @@ title: Linux - Kali
 categories: [OS,Linux,Kali]
 ---
 
-# Kali
-
-### Fix Archive Keyring Change Errors
+## Fix Archive Keyring Change Errors
 
 Occasionally happens whenever Kali has a major update, you'll see some kind of error that about a keyring being outdated or wrong
 
