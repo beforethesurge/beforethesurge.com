@@ -17,6 +17,6 @@ wget "https://archive.kali.org/archive-keyring.gpg" && sudo mv /usr/share/keyrin
 
 **Note**: Guides online (even from Kali) will point that you should run `wget` with `sudo`. This is _**HIGHLY NOT RECOMMENDED**_ as you should not expose root permissions to the outside if at all possible (this could be that they just haven't updated their forums in a while)
 
-## Source
+## Sources
 
-[A New Kali Linux Archive Signing Key | Kali Linux Blog](https://www.kali.org/blog/new-kali-archive-signing-key/)
+[A New Kali Linux Archive Signing Key](https://www.kali.org/blog/new-kali-archive-signing-key/)
