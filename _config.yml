@@ -31,9 +31,6 @@ github:
 twitter:
   username: twitter_username # change to your Twitter username
 
-indeed:
-  username: thomash-71yss00 # change to your indeed ID
-
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
@@ -41,7 +38,7 @@ social:
   email: tmhitchcock98@gmail.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://profile.indeed.com/p/thomash-71yss00 # change to your Indeed homepage
+    - https://example.com # change to your Indeed homepage
     - https://github.com/beforethesurge # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
