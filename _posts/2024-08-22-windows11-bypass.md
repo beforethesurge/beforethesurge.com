@@ -54,7 +54,7 @@ categories: [OS,Windows]
 ~~2. Type:~~
 
     ```c++
-    oobe\bypassnro
+    oobe\\bypassnro
     ```
 
 ---
