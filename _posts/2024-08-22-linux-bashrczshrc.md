@@ -11,8 +11,8 @@ categories: [OS,Linux]
 #fastfetch
 
 # Clears Bash/Zsh History
-#echo "" > ~/.bash_history && \
-#echo "" > ~/.zsh_history && \
+#echo "" > ~/.bash_history
+#echo "" > ~/.zsh_history
 # "-c" for Bash and "-p" for Zsh (may need to adjust history alias if errors show up)
 #history -c
 #history -p

@@ -1,5 +1,5 @@
 ---
-title: Windows 11 - Tweaks
+title: Windows 11 - Fixes and Tweaks
 categories: [OS,Windows]
 ---
 
@@ -8,7 +8,7 @@ categories: [OS,Windows]
 1. Create a new shortcut and enter the following path:
 
     ```c++
-    %windir%\system32\rundll32.exe advapi32.dll,ProcessIdleTasks
+    %windir%/system32/rundll32.exe advapi32.dll,ProcessIdleTasks
     ```
 
 ## Mini-Tray Clear Duplicates (Batch)
@@ -16,7 +16,7 @@ categories: [OS,Windows]
 1. Open Command Prompt and type:
 
     ```c++
-    reg.exe delete "HKCU\Control Panel\NotifyIconSettings" /f
+    reg.exe delete "HKCU/Control Panel/NotifyIconSettings" /f
     ```
 
 2. You may need to restart Windows Explorer (it should do it automatically).

@@ -5,7 +5,7 @@ categories: [OS,Windows,PowerShell]
 
 ## Clear Terminal History
 
-**PATH:** `C:\Users\YOURUSERNAME\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadLine\ConsoleHost_history.txt`
+**PATH:** `C:/Users/YOURUSERNAME/AppData/Roaming/Microsoft/Windows/PowerShell/PSReadLine/ConsoleHost_history.txt`
 
 1. Create PROFILE PATH (reference output of `echo $PROFILE`)
    - Example: `C:\Users\YOURUSERNAME\Documents\PowerShell\Microsoft.PowerShell_profile.ps1`
@@ -32,8 +32,6 @@ categories: [OS,Windows,PowerShell]
    ```powershell
    Install-Script winfetch
    ```
-
-Source: [WinFetch Installation](https://github.com/lptstr/winfetch/wiki/Installation)
 
 ---
 
@@ -64,4 +62,8 @@ Source: [WinFetch Installation](https://github.com/lptstr/winfetch/wiki/Installa
    . $PROFILE
    ```
 
-Source: [Oh-My-Posh Installation](https://ohmyposh.dev/docs/installation/windows)
+## Sources
+
+[WinFetch Installation](https://github.com/lptstr/winfetch/wiki/Installation)
+
+[Oh-My-Posh Installation](https://ohmyposh.dev/docs/installation/windows)
