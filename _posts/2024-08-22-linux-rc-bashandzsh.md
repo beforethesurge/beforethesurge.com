@@ -1,6 +1,6 @@
 ---
-title: Linux - bashrc & zshrc
-categories: [OS,Linux]
+title: Linux - RCs - bash & zsh
+categories: [OS,Linux,RCs]
 ---
 
 ```bash
