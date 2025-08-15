@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 read -p "DEV or PROD? (D/p): " user_choice
 user_choice=$(echo "$user_choice" | tr "[:upper:]" "[:lower:]")

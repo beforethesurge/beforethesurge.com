@@ -10,9 +10,18 @@ fi
 curl -sS https://webi.sh/shfmt | sh &>/dev/null
 
 # Add OMZ plugins
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
-git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
-sed -i -E "s/^(plugins=\()(git)(\))/\1\2 zsh-syntax-highlighting zsh-autosuggestions\3/" ~/.zshrc
+# git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+# git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+# sed -i -E "s/^(plugins=\()(git)(\))/\1\2 zsh-syntax-highlighting zsh-autosuggestions\3/" ~/.zshrc
 
 # Avoid git log use less
-echo -e "\nunset LESS" >>~/.zshrc
+# echo -e "\nunset LESS" >>~/.zshrc
+
+# CUSTOM CHANGES
+# Add fish
+sudo apt update
+sudo apt install fish -y
+
+# Install Docker and Docker build to container
+# sudo apt install "docker*" -y
+# sudo service docker start

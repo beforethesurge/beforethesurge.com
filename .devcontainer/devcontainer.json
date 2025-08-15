@@ -6,7 +6,7 @@
   "customizations": {
     "vscode": {
       "settings": {
-        "terminal.integrated.defaultProfile.linux": "zsh"
+        "terminal.integrated.defaultProfile.linux": "fish"
       },
       "extensions": [
         // Liquid tags auto-complete
