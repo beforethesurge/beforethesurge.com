@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docs on beforethesurge</title>
+    <link>http://localhost:1313/docs/</link>
+    <description>Recent content in Docs on beforethesurge</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>beforethesurge@gmail.com (beforethesurge)</managingEditor>
+    <webMaster>beforethesurge@gmail.com (beforethesurge)</webMaster>
+    <copyright>© 2025 beforethesurge</copyright>
+    <lastBuildDate>Thu, 14 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/docs/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Disable Pipewire in Favor of Pulseaudio</title>
+      <link>http://localhost:1313/docs/pulseaudio-from-pipewire/</link>
+      <pubDate>Thu, 14 Aug 2025 00:00:00 +0000</pubDate>
+      <author>beforethesurge@gmail.com (beforethesurge)</author>
+      <guid>http://localhost:1313/docs/pulseaudio-from-pipewire/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>RCs - fish</title>
+      <link>http://localhost:1313/docs/rc-fishrc/</link>
+      <pubDate>Thu, 26 Jun 2025 00:00:00 +0000</pubDate>
+      <author>beforethesurge@gmail.com (beforethesurge)</author>
+      <guid>http://localhost:1313/docs/rc-fishrc/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Kali - Fix Archive Keyring Change</title>
+      <link>http://localhost:1313/docs/linux-kali/</link>
+      <pubDate>Thu, 05 Jun 2025 00:00:00 +0000</pubDate>
+      <author>beforethesurge@gmail.com (beforethesurge)</author>
+      <guid>http://localhost:1313/docs/linux-kali/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Linux - Remove Snap</title>
+      <link>http://localhost:1313/docs/linux-remove-snap/</link>
+      <pubDate>Thu, 05 Jun 2025 00:00:00 +0000</pubDate>
+      <author>beforethesurge@gmail.com (beforethesurge)</author>
+      <guid>http://localhost:1313/docs/linux-remove-snap/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Powershell - Get/Set-ExecutionPolicy</title>
+      <link>http://localhost:1313/docs/commands-powershell-script-execution/</link>
+      <pubDate>Thu, 06 Feb 2025 00:00:00 +0000</pubDate>
+      <author>beforethesurge@gmail.com (beforethesurge)</author>
+      <guid>http://localhost:1313/docs/commands-powershell-script-execution/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Feroxbuster</title>
+      <link>http://localhost:1313/docs/feroxbuster/</link>
+      <pubDate>Thu, 17 Oct 2024 00:00:00 +0000</pubDate>
+      <author>beforethesurge@gmail.com (beforethesurge)</author>
+      <guid>http://localhost:1313/docs/feroxbuster/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Networking - Troubleshooting</title>
+      <link>http://localhost:1313/docs/network-troubleshooting/</link>
+      <pubDate>Tue, 17 Sep 2024 00:00:00 +0000</pubDate>
+      <author>beforethesurge@gmail.com (beforethesurge)</author>
+      <guid>http://localhost:1313/docs/network-troubleshooting/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Windows 11 - WSL</title>
+      <link>http://localhost:1313/docs/windows11-wsl/</link>
+      <pubDate>Fri, 30 Aug 2024 00:00:00 +0000</pubDate>
+      <author>beforethesurge@gmail.com (beforethesurge)</author>
+      <guid>http://localhost:1313/docs/windows11-wsl/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Commands (Bash)</title>
+      <link>http://localhost:1313/docs/commands-bash/</link>
+      <pubDate>Thu, 22 Aug 2024 00:00:00 +0000</pubDate>
+      <author>beforethesurge@gmail.com (beforethesurge)</author>
+      <guid>http://localhost:1313/docs/commands-bash/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Commands (FortiGate)</title>
+      <link>http://localhost:1313/docs/commands-fortigate/</link>
+      <pubDate>Thu, 22 Aug 2024 00:00:00 +0000</pubDate>
+      <author>beforethesurge@gmail.com (beforethesurge)</author>
+      <guid>http://localhost:1313/docs/commands-fortigate/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Nmap</title>
+      <link>http://localhost:1313/docs/nmap/</link>
+      <pubDate>Thu, 22 Aug 2024 00:00:00 +0000</pubDate>
+      <author>beforethesurge@gmail.com (beforethesurge)</author>
+      <guid>http://localhost:1313/docs/nmap/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>RCs - bash &amp; zsh</title>
+      <link>http://localhost:1313/docs/rc-bashandzsh/</link>
+      <pubDate>Thu, 22 Aug 2024 00:00:00 +0000</pubDate>
+      <author>beforethesurge@gmail.com (beforethesurge)</author>
+      <guid>http://localhost:1313/docs/rc-bashandzsh/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Windows 11 - Bypass</title>
+      <link>http://localhost:1313/docs/windows11-bypass/</link>
+      <pubDate>Thu, 22 Aug 2024 00:00:00 +0000</pubDate>
+      <author>beforethesurge@gmail.com (beforethesurge)</author>
+      <guid>http://localhost:1313/docs/windows11-bypass/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Windows 11 - Fixes and Tweaks</title>
+      <link>http://localhost:1313/docs/windows11-fixes-and-tweaks/</link>
+      <pubDate>Thu, 22 Aug 2024 00:00:00 +0000</pubDate>
+      <author>beforethesurge@gmail.com (beforethesurge)</author>
+      <guid>http://localhost:1313/docs/windows11-fixes-and-tweaks/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Windows 11 - PowerShell Tweaks</title>
+      <link>http://localhost:1313/docs/windows11-powershell-tweaks/</link>
+      <pubDate>Thu, 22 Aug 2024 00:00:00 +0000</pubDate>
+      <author>beforethesurge@gmail.com (beforethesurge)</author>
+      <guid>http://localhost:1313/docs/windows11-powershell-tweaks/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Commands (CMD, PowerShell)</title>
+      <link>http://localhost:1313/docs/commands-cmd-powershell/</link>
+      <pubDate>Tue, 06 Aug 2024 00:00:00 +0000</pubDate>
+      <author>beforethesurge@gmail.com (beforethesurge)</author>
+      <guid>http://localhost:1313/docs/commands-cmd-powershell/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Decoding and Encoding Tools</title>
+      <link>http://localhost:1313/docs/decoding-and-encoding/</link>
+      <pubDate>Tue, 06 Aug 2024 00:00:00 +0000</pubDate>
+      <author>beforethesurge@gmail.com (beforethesurge)</author>
+      <guid>http://localhost:1313/docs/decoding-and-encoding/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Exploit Tools</title>
+      <link>http://localhost:1313/docs/exploit-tools/</link>
+      <pubDate>Tue, 06 Aug 2024 00:00:00 +0000</pubDate>
+      <author>beforethesurge@gmail.com (beforethesurge)</author>
+      <guid>http://localhost:1313/docs/exploit-tools/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>HTTP Response Status Codes</title>
+      <link>http://localhost:1313/docs/http-response-status-codes/</link>
+      <pubDate>Tue, 06 Aug 2024 00:00:00 +0000</pubDate>
+      <author>beforethesurge@gmail.com (beforethesurge)</author>
+      <guid>http://localhost:1313/docs/http-response-status-codes/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>MongoDB Cheat Sheet</title>
+      <link>http://localhost:1313/docs/mongodb/</link>
+      <pubDate>Tue, 06 Aug 2024 00:00:00 +0000</pubDate>
+      <author>beforethesurge@gmail.com (beforethesurge)</author>
+      <guid>http://localhost:1313/docs/mongodb/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Online Information Gathering Tools</title>
+      <link>http://localhost:1313/docs/information-gathering/</link>
+      <pubDate>Tue, 06 Aug 2024 00:00:00 +0000</pubDate>
+      <author>beforethesurge@gmail.com (beforethesurge)</author>
+      <guid>http://localhost:1313/docs/information-gathering/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Port Database</title>
+      <link>http://localhost:1313/docs/port-database/</link>
+      <pubDate>Tue, 06 Aug 2024 00:00:00 +0000</pubDate>
+      <author>beforethesurge@gmail.com (beforethesurge)</author>
+      <guid>http://localhost:1313/docs/port-database/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Shells - fish</title>
+      <link>http://localhost:1313/docs/shell-fish/</link>
+      <pubDate>Wed, 26 Jun 2024 00:00:00 +0000</pubDate>
+      <author>beforethesurge@gmail.com (beforethesurge)</author>
+      <guid>http://localhost:1313/docs/shell-fish/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>

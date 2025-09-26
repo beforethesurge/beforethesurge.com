@@ -1,0 +1,1780 @@
+<!doctype html>
+<html
+  lang="en"
+  dir="ltr"
+  class="scroll-smooth"
+  data-default-appearance="dark"
+  data-auto-appearance="true"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  
+    <meta http-equiv="content-language" content="en">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color">
+
+  
+  <title>HTTP Response Status Codes &middot; beforethesurge</title>
+    <meta name="title" content="HTTP Response Status Codes &middot; beforethesurge">
+
+  
+  <meta name="description" content="A documentation site">
+  
+  
+  
+  <link rel="canonical" href="http://localhost:1313/docs/2024-08-06-http-response-status-codes/">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="/css/main.bundle.min.f875dda8a6dc16f33adb8873681506c07444631be7e42b7575718d40698db0db7cd237ac4306f361ed9daaa2f828ff344a9fc7f845cf0217dcbc9360d395f0f9.css"
+    integrity="sha512-&#43;HXdqKbcFvM624hzaBUGwHREYxvn5Ct1dXGNQGmNsNt80jesQwbzYe2dqqL4KP80Sp/H&#43;EXPAhfcvJNg05Xw&#43;Q==">
+
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js"
+    integrity="sha512-UWoWdFvqWpvQERONJUzA/TlzzVXObhXz3sdj58fCx0SPj&#43;e1TMqBHLghsMfhLNFhyqzh3XlKw9NNQJN8vMnuEg=="></script>
+  
+  
+  
+  
+    
+    
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    <script
+      defer
+      type="text/javascript"
+      id="script-bundle"
+      src="/js/main.bundle.min.a187118b41a60744310065c567365de85730c8495301d0ebae41810cc6f7a47432b1de7d4f3b11338959f1ac50c266be6b4b73acf6bf770016eb59b602cc1aa0.js"
+      integrity="sha512-oYcRi0GmB0QxAGXFZzZd6FcwyElTAdDrrkGBDMb3pHQysd59TzsRM4lZ8axQwma&#43;a0tzrPa/dwAW61m2AswaoA=="
+      data-copy="Copy"
+      data-copied="Copied"></script>
+  
+  
+    
+    <script src="/lib/zoom/zoom.min.umd.a527109b68c082a70f3697716dd72a9d5aa8b545cf800cecbbc7399f2ca6f6e0ce3e431f2062b48bbfa47c9ea42822714060bef309be073f49b9c0e30d318d7b.js" integrity="sha512-pScQm2jAgqcPNpdxbdcqnVqotUXPgAzsu8c5nyym9uDOPkMfIGK0i7&#43;kfJ6kKCJxQGC&#43;8wm&#43;Bz9JucDjDTGNew=="></script>
+  
+
+  
+  
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+  <meta property="og:url" content="http://localhost:1313/docs/2024-08-06-http-response-status-codes/">
+  <meta property="og:site_name" content="beforethesurge">
+  <meta property="og:title" content="HTTP Response Status Codes">
+  <meta property="og:description" content="A documentation site">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+    <meta property="article:published_time" content="2024-08-06T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-08-06T00:00:00+00:00">
+
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="HTTP Response Status Codes">
+  <meta name="twitter:description" content="A documentation site">
+
+  <script type="application/ld+json">
+  [{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "Docs",
+    "name": "HTTP Response Status Codes",
+    "headline": "HTTP Response Status Codes",
+    
+    
+    "inLanguage": "en",
+    "url" : "http:\/\/localhost:1313\/docs\/2024-08-06-http-response-status-codes\/",
+    "author" : {
+      "@type": "Person",
+      "name": "beforethesurge"
+    },
+    "copyrightYear": "2024",
+    "dateCreated": "2024-08-06T00:00:00\u002b00:00",
+    "datePublished": "2024-08-06T00:00:00\u002b00:00",
+    
+    "dateModified": "2024-08-06T00:00:00\u002b00:00",
+    
+    
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "2300"
+  }]
+  </script>
+
+
+
+  
+  
+    <meta name="author" content="beforethesurge">
+  
+  
+    
+      
+        
+      
+    
+      
+        
+          <link href="https://github.com/beforethesurge" rel="me">
+        
+      
+    
+  
+
+  
+  
+
+<script src="/lib/jquery/jquery.slim.min.b0dca576e87d7eaa5850ae4e61759c065786cdb6489d68fcc82240539eebd5da522bdb4fda085ffd245808c8fe2acb2516408eb774ef26b5f6015fc6737c0ea8.js" integrity="sha512-sNylduh9fqpYUK5OYXWcBleGzbZInWj8yCJAU57r1dpSK9tP2ghf/SRYCMj&#43;KsslFkCOt3TvJrX2AV/Gc3wOqA=="></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+  
+  
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+</head>
+<body
+    class="flex flex-col h-screen px-6 m-auto text-lg leading-7 max-w-7xl bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32 scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600">
+    <div id="the-top" class="absolute flex self-center">
+      <a
+        class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 focus:translate-y-0 dark:bg-neutral-600"
+        href="#main-content">
+        <span class="font-bold text-primary-600 pe-2 dark:text-primary-400">&darr;</span>
+        Skip to main content
+      </a>
+    </div>
+    
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div
+  class="main-menu flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start gap-x-3 pt-[2px] pr-0 pb-[3px] pl-0">
+  
+  
+    
+    
+      <div>
+        <a href="/" class="flex">
+          <span class="sr-only">beforethesurge</span>
+          
+            <img
+              src="/img/logo.png"
+              width="230"
+              height="230"
+              class="logo max-h-[5rem] max-w-[5rem] object-scale-down object-left nozoom"
+              alt="beforethesurge">
+          
+        </a>
+      </div>
+    
+
+  <div class="flex flex-1 items-center justify-between">
+    <nav class="flex space-x-3">
+      
+        <a href="/" class="text-base font-medium">
+          beforethesurge
+        </a>
+      
+    </nav>
+    
+  <nav class="hidden md:flex items-center gap-x-5 md:ml-12 h-12">
+    
+      
+        
+  <a
+  href="/docs/"
+  
+  class="flex items-center hover:text-primary-600 dark:hover:text-primary-400">
+  
+  <p class="text-base font-medium" title="Docs">
+    Docs
+  </p>
+</a>
+
+
+
+      
+        
+  <a
+  href="/categories/"
+  
+  class="flex items-center hover:text-primary-600 dark:hover:text-primary-400">
+  
+  <p class="text-base font-medium" title="Categories">
+    Categories
+  </p>
+</a>
+
+
+
+      
+        
+  <a
+  href="/about/"
+  
+  class="flex items-center hover:text-primary-600 dark:hover:text-primary-400">
+  
+  <p class="text-base font-medium" title="About Me">
+    About
+  </p>
+</a>
+
+
+
+      
+    
+
+    
+
+    
+
+    
+      <button
+        id="search-button"
+        aria-label="Search"
+        class="text-base hover:text-primary-600 dark:hover:text-primary-400"
+        title="Search (/)">
+        <span class="relative block icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+      </button>
+    
+
+    
+      <div class=" flex items-center">
+        <button
+          id="appearance-switcher"
+          aria-label="Dark mode switcher"
+          type="button"
+          class="text-base hover:text-primary-600 dark:hover:text-primary-400">
+          <div class="flex items-center justify-center dark:hidden">
+            <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+</span>
+          </div>
+          <div class="items-center justify-center hidden dark:flex">
+            <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+</span>
+          </div>
+        </button>
+      </div>
+    
+  </nav>
+
+    
+  <div class="flex md:hidden items-center gap-x-5 md:ml-12 h-12">
+    <span></span>
+
+    
+
+    
+
+    
+      <button
+        id="search-button-mobile"
+        aria-label="Search"
+        class="text-base hover:text-primary-600 dark:hover:text-primary-400"
+        title="Search (/)">
+        <span class="relative block icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+      </button>
+    
+
+    
+      <button
+        id="appearance-switcher-mobile"
+        aria-label="Dark mode switcher"
+        type="button"
+        class="text-base hover:text-primary-600 dark:hover:text-primary-400 me-1">
+        <div class="flex items-center justify-center dark:hidden">
+          <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+</span>
+        </div>
+        <div class="items-center justify-center hidden dark:flex">
+          <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+</span>
+        </div>
+      </button>
+    
+  </div>
+
+  </div>
+  
+  <div class="-my-2 md:hidden">
+    <div id="menu-button" class="block">
+      
+        <div class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400">
+          <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
+</span>
+        </div>
+        <div
+          id="menu-wrapper"
+          class="fixed inset-0 z-30 invisible w-screen h-screen m-0 overflow-auto transition-opacity opacity-0 cursor-default bg-neutral-100/50 backdrop-blur-sm dark:bg-neutral-900/50 pt-[5px]">
+          <ul
+            class="flex space-y-2 mt-3 flex-col items-end w-full px-6 py-6 mx-auto overflow-visible list-none text-end max-w-7xl">
+            <li id="menu-close-button">
+              <span
+                class="cursor-pointer inline-block align-text-bottom hover:text-primary-600 dark:hover:text-primary-400">
+                <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+</span>
+              </span>
+            </li>
+
+            
+              
+  <li class="mt-1">
+  <a
+    href="/docs/"
+    
+    class="flex items-center hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-bg font-bg" title="Docs">
+      Docs
+    </p>
+  </a>
+</li>
+
+
+
+            
+              
+  <li class="mt-1">
+  <a
+    href="/categories/"
+    
+    class="flex items-center hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-bg font-bg" title="Categories">
+      Categories
+    </p>
+  </a>
+</li>
+
+
+
+            
+              
+  <li class="mt-1">
+  <a
+    href="/about/"
+    
+    class="flex items-center hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-bg font-bg" title="About Me">
+      About
+    </p>
+  </a>
+</li>
+
+
+
+            
+
+          </ul>
+          
+        </div>
+      
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+    
+    <div class="relative flex flex-col grow">
+      <main id="main-content" class="grow">
+        
+  
+  <article>
+    
+    
+
+    
+    <header id="single_header" class="mt-5 max-w-prose">
+      
+      <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+        HTTP Response Status Codes
+      </h1>
+      <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+        
+
+
+
+
+
+  
+  
+
+
+
+  
+
+  
+  
+  
+
+  
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
+    
+    
+      <time datetime="2024-08-06T00:00:00&#43;00:00">2024-08-06</time><span class="px-2 text-primary-500">&middot;</span><span>2300 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">11 mins</span>
+    
+
+    
+    
+  </div>
+
+  
+
+  
+  
+
+  
+  
+
+
+
+      </div>
+      
+        
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+      
+    </header>
+
+    
+    <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
+      
+      
+      
+      
+      
+      
+
+
+      <div class="min-w-0 min-h-0 max-w-fit">
+        
+
+        <div class="article-content max-w-prose mb-20">
+          
+<h2 class="relative group">HTTP response status codes indicate whether a specific HTTP request has been successfully completed 
+    <div id="http-response-status-codes-indicate-whether-a-specifichttp-request-has-been-successfully-completed" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#http-response-status-codes-indicate-whether-a-specifichttp-request-has-been-successfully-completed" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+
+<h3 class="relative group">Responses are grouped in five classes 
+    <div id="responses-are-grouped-in-five-classes" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#responses-are-grouped-in-five-classes" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+
+<h4 class="relative group">1. Informational responses (<code>100</code> – <code>199</code>) 
+    <div id="1-informational-responses-100199" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#1-informational-responses-100199" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+
+<h4 class="relative group">2. Successful responses (<code>200</code> – <code>299</code>) 
+    <div id="2-successful-responses-200299" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#2-successful-responses-200299" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+
+<h4 class="relative group">3. Redirection messages (<code>300</code> – <code>399</code>) 
+    <div id="3-redirection-messages-300399" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#3-redirection-messages-300399" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+
+<h4 class="relative group">4. Client error responses (<code>400</code> – <code>499</code>) 
+    <div id="4-client-error-responses-400499" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#4-client-error-responses-400499" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+
+<h4 class="relative group">5. Server error responses (<code>500</code> – <code>599</code>) 
+    <div id="5-server-error-responses-500599" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#5-server-error-responses-500599" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<p>The status codes listed below are defined by <a
+  href="https://datatracker.ietf.org/doc/html/rfc9110"
+    target="_blank"
+  >RFC 9110</a> (click <a
+  href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Resources_and_specifications"
+    target="_blank"
+  >here</a> for details on all HTTP specifications)</p>
+<blockquote>
+<p>If you receive a response that is not in this list, it is a non-standard response, possibly custom to the server&rsquo;s software.</p></blockquote>
+<hr>
+
+<h3 class="relative group">100 - Information responses 
+    <div id="100---information-responses" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#100---information-responses" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+
+<h4 class="relative group"><code>100 Continue</code> 
+    <div id="100-continue" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#100-continue" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<ul>
+<li>This interim response indicates that the client should continue the request or ignore the response if the request is already finished.</li>
+</ul>
+
+<h4 class="relative group"><code>101 Switching Protocols</code> 
+    <div id="101-switching-protocols" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#101-switching-protocols" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<ul>
+<li>This code is sent in response to an <code>Upgrade</code>request header from the client and indicates the protocol the server is switching to.</li>
+</ul>
+
+<h4 class="relative group"><code>102 Processing</code> 
+    <div id="102-processing" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#102-processing" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<ul>
+<li>This code indicates that the server has received and is processing the request, but no response is available yet.</li>
+</ul>
+
+<h4 class="relative group"><code>103 Early Hints</code> 
+    <div id="103-early-hints" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#103-early-hints" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<ul>
+<li>This status code is primarily intended to be used with the <code>Link</code> header, letting the user agent start preloadingresources while the server prepares a response or preconnect to an origin from which the page will need resources.</li>
+</ul>
+<hr>
+
+<h3 class="relative group">200 - Successful responses 
+    <div id="200---successful-responses" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#200---successful-responses" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+
+<h4 class="relative group"><code>200 --&gt; OK</code> 
+    <div id="200----ok" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#200----ok" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<ul>
+<li>
+<p>The request succeeded. The result meaning of &ldquo;success&rdquo; depends on the HTTP method:</p>
+<ol>
+<li><code>GET</code>: The resource has been fetched and transmitted in the message body.</li>
+<li><code>HEAD</code>: The representation headers are included in the response without any message body.</li>
+<li><code>PUT</code> or <code>POST</code>: The resource describing the result of the action is transmitted in the message body.</li>
+<li><code>TRACE</code>: The message body contains the request message as received by the server.</li>
+</ol>
+</li>
+</ul>
+
+<h4 class="relative group"><code>201 --&gt; Created</code> 
+    <div id="201----created" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#201----created" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<ul>
+<li>The request succeeded, and a new resource was created as a result. This is typically the response sent after <code>POST</code> requests, or some <code>PUT</code> requests.</li>
+</ul>
+
+<h4 class="relative group"><code>202 --&gt; Accepted</code> 
+    <div id="202----accepted" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#202----accepted" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<ul>
+<li>The request has been received but not yet acted upon. It is noncommittal, since there is no way in HTTP to later send an asynchronous response indicating the outcome of the request. It is intended for cases where another process or server handles the request, or for batch processing.</li>
+</ul>
+
+<h4 class="relative group"><code>203 --&gt; Non-Authoritative Information</code> 
+    <div id="203----non-authoritative-information" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#203----non-authoritative-information" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<ul>
+<li>This response code means the returned metadata is not exactly the same as is available from the origin server, but is collected from a local or a third-party copy. This is mostly used for mirrors or backups of another resource. Except for that specific case, the <code>200 OK</code> response is preferred to this status.</li>
+</ul>
+
+<h4 class="relative group"><code>204 --&gt; No Content</code> 
+    <div id="204----no-content" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#204----no-content" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<ul>
+<li>There is no content to send for this request, but the headers may be useful. The user agent may update its cached headers for this resource with the new ones.</li>
+</ul>
+
+<h4 class="relative group"><code>205 --&gt; Reset Content</code> 
+    <div id="205----reset-content" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#205----reset-content" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<ul>
+<li>Tells the user agent to reset the document which sent this request.</li>
+</ul>
+
+<h4 class="relative group"><code>206 --&gt; Partial Content</code> 
+    <div id="206----partial-content" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#206----partial-content" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<ul>
+<li>This response code is used when the <code>Range</code>header is sent from the client to request only part of a resource.</li>
+</ul>
+
+<h4 class="relative group"><code>207 --&gt; Multi-Status</code> 
+    <div id="207----multi-status" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#207----multi-status" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<ul>
+<li>Conveys information about multiple resources, for situations where multiple status codes might be appropriate.</li>
+</ul>
+
+<h4 class="relative group"><code>208 --&gt; Already Reported</code> 
+    <div id="208----already-reported" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#208----already-reported" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<ul>
+<li>Used inside a <code>&lt;dav:propstat&gt;</code> response element to avoid repeatedly enumerating the internal members of multiple bindings to the same collection.</li>
+</ul>
+
+<h4 class="relative group"><code>226 --&gt; IM Used</code> 
+    <div id="226----im-used" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#226----im-used" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<ul>
+<li>The server has fulfilled a<code>GET</code> request for the resource, and the response is a representation of the result of one or more instance-manipulations applied to the current instance.</li>
+</ul>
+<hr>
+
+<h3 class="relative group">300 - Redirection messages 
+    <div id="300---redirection-messages" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#300---redirection-messages" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+
+<h4 class="relative group"><code>300 --&gt; Multiple Choices</code> 
+    <div id="300----multiple-choices" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#300----multiple-choices" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<ul>
+<li>The request has more than one possible response. The user agent or user should choose one of them. (There is no standardized way of choosing one of the responses, but HTML links to the possibilities are recommended so the user can pick.)</li>
+</ul>
+
+<h4 class="relative group"><code>301 --&gt; Moved Permanently</code> 
+    <div id="301----moved-permanently" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#301----moved-permanently" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<ul>
+<li>The URL of the requested resource has been changed permanently. The new URL is given in the response.</li>
+</ul>
+
+<h4 class="relative group"><code>302 --&gt; Found</code> 
+    <div id="302----found" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#302----found" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<ul>
+<li>This response code means that the URI of requested resource has been changed <em>temporarily</em>. Further changes in the URI might be made in the future. Therefore, this same URI should be used by the client in future requests.</li>
+</ul>
+
+<h4 class="relative group"><code>303 --&gt; See Other</code> 
+    <div id="303----see-other" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#303----see-other" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<ul>
+<li>The server sent this response to direct the client to get the requested resource at another URI with a GET request.</li>
+</ul>
+
+<h4 class="relative group"><code>304 --&gt; Not Modified</code> 
+    <div id="304----not-modified" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#304----not-modified" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<ul>
+<li>This is used for caching purposes. It tells the client that the response has not been modified, so the client can continue to use the same cached version of the response.</li>
+</ul>
+
+<h4 class="relative group"><code>305 --&gt; Use Proxy</code> 
+    <div id="305----use-proxy" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#305----use-proxy" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<ul>
+<li>Defined in a previous version of the HTTP specification to indicate that a requested response must be accessed by a proxy. It has been deprecated due to security concerns regarding in-band configuration of a proxy.</li>
+</ul>
+
+<h4 class="relative group"><code>306 --&gt; unused</code> 
+    <div id="306----unused" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#306----unused" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<ul>
+<li>This response code is no longer used; it is just reserved. It was used in a previous version of the HTTP/1.1 specification.</li>
+</ul>
+
+<h4 class="relative group"><code>307 --&gt; Temporary Redirect</code> 
+    <div id="307----temporary-redirect" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#307----temporary-redirect" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<ul>
+<li>The server sends this response to direct the client to get the requested resource at another URI with the same method that was used in the prior request. This has the same semantics as the <code>302 Found</code> HTTP response code, with the exception that the user agent <em>must not</em> change the HTTP method used: if a <code>POST</code> was used in the first request, a <code>POST</code> must be used in the second request.</li>
+</ul>
+
+<h4 class="relative group"><code>308 --&gt; Permanent Redirect</code> 
+    <div id="308----permanent-redirect" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#308----permanent-redirect" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<ul>
+<li>This means that the resource is now permanently located at another URI, specified by the <code>Location:</code> HTTP Response header. This has the same semantics as the <code>301 Moved Permanently</code> HTTP response code, with the exception that the user agent <em>must not</em> change the HTTP method used: if a <code>POST</code> was used in the first request, a <code>POST</code> must be used in the second request.</li>
+</ul>
+<hr>
+
+<h3 class="relative group">400 - Client error responses 
+    <div id="400---client-error-responses" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#400---client-error-responses" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+
+<h4 class="relative group"><code>400 --&gt; Bad Request</code> 
+    <div id="400----bad-request" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#400----bad-request" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<ul>
+<li>The server cannot or will not process the request due to something that is perceived to be a client error (e.g., malformed request syntax, invalid request message framing, or deceptive request routing).</li>
+</ul>
+
+<h4 class="relative group"><code>401 --&gt; Unauthorized</code> 
+    <div id="401----unauthorized" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#401----unauthorized" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<ul>
+<li>Although the HTTP standard specifies &ldquo;unauthorized&rdquo;, semantically this response means &ldquo;unauthenticated&rdquo;. That is, the client must authenticate itself to get the requested response.</li>
+</ul>
+
+<h4 class="relative group"><code>402 --&gt; Payment Required</code> 
+    <div id="402----payment-required" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#402----payment-required" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<ul>
+<li>This response code is reserved for future use. The initial aim for creating this code was using it for digital payment systems, however this status code is used very rarely and no standard convention exists.</li>
+</ul>
+
+<h4 class="relative group"><code>403 --&gt; Forbidden</code> 
+    <div id="403----forbidden" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#403----forbidden" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<ul>
+<li>The client does not have access rights to the content; that is, it is unauthorized, so the server is refusing to give the requested resource. Unlike <code>401 Unauthorized</code>, the client&rsquo;s identity is known to the server.</li>
+</ul>
+
+<h4 class="relative group"><code>404 --&gt; Not Found</code> 
+    <div id="404----not-found" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#404----not-found" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<ul>
+<li>The server cannot find the requested resource. In the browser, this means the URL is not recognized. In an API, this can also mean that the endpoint is valid but the resource itself does not exist. Servers may also send this response instead of <code>403 Forbidden</code> to hide the existence of a resource from an unauthorized client. This response code is probably the most well known due to its frequent occurrence on the web.</li>
+</ul>
+
+<h4 class="relative group"><code>405 --&gt; Method Not Allowed</code> 
+    <div id="405----method-not-allowed" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#405----method-not-allowed" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<ul>
+<li>The request method is known by the server but is not supported by the target resource. For example, an API may not allow calling <code>DELETE</code> to remove a resource.</li>
+</ul>
+
+<h4 class="relative group"><code>406 --&gt; Not Acceptable</code> 
+    <div id="406----not-acceptable" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#406----not-acceptable" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<ul>
+<li>This response is sent when the web server, after performing <a
+  href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Content_negotiation#server-driven_negotiation"
+    target="_blank"
+  >server-driven content negotiation</a>, doesn&rsquo;t find any content that conforms to the criteria given by the user agent.</li>
+</ul>
+
+<h4 class="relative group"><code>407 --&gt; Proxy Authentication Required</code> 
+    <div id="407----proxy-authentication-required" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#407----proxy-authentication-required" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<ul>
+<li>This is similar to <code>401 Unauthorized</code> but authentication is needed to be done by a proxy.</li>
+</ul>
+
+<h4 class="relative group"><code>408 --&gt; Request Timeout</code> 
+    <div id="408----request-timeout" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#408----request-timeout" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<ul>
+<li>This response is sent on an idle connection by some servers, even without any previous request by the client. It means that the server would like to shut down this unused connection. This response is used much more since some browsers, like Chrome, Firefox 27+, or IE9, use HTTP pre-connection mechanisms to speed up surfing. Also note that some servers merely shut down the connection without sending this message.</li>
+</ul>
+
+<h4 class="relative group"><code>409 --&gt; Conflict</code> 
+    <div id="409----conflict" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#409----conflict" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<ul>
+<li>This response is sent when a request conflicts with the current state of the server.</li>
+</ul>
+
+<h4 class="relative group"><code>410 --&gt; Gone</code> 
+    <div id="410----gone" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#410----gone" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<ul>
+<li>This response is sent when the requested content has been permanently deleted from server, with no forwarding address. Clients are expected to remove their caches and links to the resource. The HTTP specification intends this status code to be used for &ldquo;limited-time, promotional services&rdquo;. APIs should not feel compelled to indicate resources that have been deleted with this status code.</li>
+</ul>
+
+<h4 class="relative group"><code>411 --&gt; Length Required</code> 
+    <div id="411----length-required" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#411----length-required" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<ul>
+<li>Server rejected the request because the <code>Content-Length</code> header field is not defined and the server requires it.</li>
+</ul>
+
+<h4 class="relative group"><code>412 --&gt; Precondition Failed</code> 
+    <div id="412----precondition-failed" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#412----precondition-failed" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<ul>
+<li>The client has indicated preconditions in its headers which the server does not meet.</li>
+</ul>
+
+<h4 class="relative group"><code>413 --&gt; Payload Too Large</code> 
+    <div id="413----payload-too-large" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#413----payload-too-large" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<ul>
+<li>Request entity is larger than limits defined by server. The server might close the connection or return an <code>Retry-After</code> header field.</li>
+</ul>
+
+<h4 class="relative group"><code>414 --&gt; URI Too Long</code> 
+    <div id="414----uri-too-long" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#414----uri-too-long" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<ul>
+<li>The URI requested by the client is longer than the server is willing to interpret.</li>
+</ul>
+
+<h4 class="relative group"><code>415 --&gt; Unsupported Media Type</code> 
+    <div id="415----unsupported-media-type" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#415----unsupported-media-type" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<ul>
+<li>The media format of the requested data is not supported by the server, so the server is rejecting the request.</li>
+</ul>
+
+<h4 class="relative group"><code>416 --&gt; Range Not Satisfiable</code> 
+    <div id="416----range-not-satisfiable" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#416----range-not-satisfiable" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<ul>
+<li>The range specified by the <code>Range</code> header field in the request cannot be fulfilled. It&rsquo;s possible that the range is outside the size of the target URI&rsquo;s data.</li>
+</ul>
+
+<h4 class="relative group"><code>417 --&gt; Expectation Failed</code> 
+    <div id="417----expectation-failed" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#417----expectation-failed" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<ul>
+<li>This response code means the expectation indicated by the <code>Expect</code> request header field cannot be met by the server.</li>
+</ul>
+
+<h4 class="relative group"><code>418 --&gt; I'm a teapot</code> 
+    <div id="418----im-a-teapot" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#418----im-a-teapot" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<ul>
+<li>The server refuses the attempt to brew coffee with a teapot.</li>
+</ul>
+
+<h4 class="relative group"><code>421 --&gt; Misdirected Request</code> 
+    <div id="421----misdirected-request" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#421----misdirected-request" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<ul>
+<li>The request was directed at a server that is not able to produce a response. This can be sent by a server that is not configured to produce responses for the combination of scheme and authority that are included in the request URI.</li>
+</ul>
+
+<h4 class="relative group"><code>422 --&gt; Unprocessable Content</code> 
+    <div id="422----unprocessable-content" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#422----unprocessable-content" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<ul>
+<li>The request was well-formed but was unable to be followed due to semantic errors.</li>
+</ul>
+
+<h4 class="relative group"><code>423 --&gt; Locked</code> 
+    <div id="423----locked" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#423----locked" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<ul>
+<li>The resource that is being accessed is locked.</li>
+</ul>
+
+<h4 class="relative group"><code>424 --&gt; Failed Dependency</code> 
+    <div id="424----failed-dependency" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#424----failed-dependency" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<ul>
+<li>The request failed due to failure of a previous request.</li>
+</ul>
+
+<h4 class="relative group"><code>425 --&gt; Too Early</code> 
+    <div id="425----too-early" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#425----too-early" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<ul>
+<li>Indicates that the server is unwilling to risk processing a request that might be replayed.</li>
+</ul>
+
+<h4 class="relative group"><code>426 --&gt; Upgrade Required</code> 
+    <div id="426----upgrade-required" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#426----upgrade-required" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<ul>
+<li>The server refuses to perform the request using the current protocol but might be willing to do so after the client upgrades to a different protocol. The server sends an <a
+  href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Upgrade"
+    target="_blank"
+  ><code>Upgrade</code></a> header in a 426 response to indicate the required protocol(s).</li>
+</ul>
+
+<h4 class="relative group"><code>428 --&gt; Precondition Required</code> 
+    <div id="428----precondition-required" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#428----precondition-required" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<ul>
+<li>The origin server requires the request to be conditional. This response is intended to prevent the &rsquo;lost update&rsquo; problem, where a client <code>GET</code>s a resource&rsquo;s state, modifies it and <code>PUT</code>s it back to the server, when meanwhile a third party has modified the state on the server, leading to a conflict.</li>
+</ul>
+
+<h4 class="relative group"><code>429 --&gt; Too Many Requests</code> 
+    <div id="429----too-many-requests" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#429----too-many-requests" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<ul>
+<li>The user has sent too many requests in a given amount of time (&ldquo;rate limiting&rdquo;).</li>
+</ul>
+
+<h4 class="relative group"><code>431 --&gt; Request Header Fields Too Large</code> 
+    <div id="431----request-header-fields-too-large" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#431----request-header-fields-too-large" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<ul>
+<li>The server is unwilling to process the request because its header fields are too large. The request may be resubmitted after reducing the size of the request header fields.</li>
+</ul>
+
+<h4 class="relative group"><code>451 --&gt; Unavailable For Legal Reasons</code> 
+    <div id="451----unavailable-for-legal-reasons" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#451----unavailable-for-legal-reasons" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<ul>
+<li>The user agent requested a resource that cannot legally be provided, such as a web page censored by a government.</li>
+</ul>
+<hr>
+
+<h3 class="relative group">500 - Server error responses 
+    <div id="500---server-error-responses" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#500---server-error-responses" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+
+<h4 class="relative group"><code>500 --&gt; Internal Server Error</code> 
+    <div id="500----internal-server-error" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#500----internal-server-error" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<ul>
+<li>The server has encountered a situation it does not know how to handle.</li>
+</ul>
+
+<h4 class="relative group"><code>501 --&gt; Not Implemented</code> 
+    <div id="501----not-implemented" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#501----not-implemented" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<ul>
+<li>The request method is not supported by the server and cannot be handled. The only methods that servers are required to support (and therefore that must not return this code) are <code>GET</code> and <code>HEAD</code>.</li>
+</ul>
+
+<h4 class="relative group"><code>502 --&gt; Bad Gateway</code> 
+    <div id="502----bad-gateway" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#502----bad-gateway" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<ul>
+<li>This error response means that the server, while working as a gateway to get a response needed to handle the request, got an invalid response.</li>
+</ul>
+
+<h4 class="relative group"><code>503 --&gt; Service Unavailable</code> 
+    <div id="503----service-unavailable" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#503----service-unavailable" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<ul>
+<li>The server is not ready to handle the request. Common causes are a server that is down for maintenance or that is overloaded. Note that together with this response, a user-friendly page explaining the problem should be sent. This response should be used for temporary conditions and the <code>Retry-After</code> HTTP header should, if possible, contain the estimated time before the recovery of the service. The webmaster must also take care about the caching-related headers that are sent along with this response, as these temporary condition responses should usually not be cached.</li>
+</ul>
+
+<h4 class="relative group"><code>504 --&gt; Gateway Timeout</code> 
+    <div id="504----gateway-timeout" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#504----gateway-timeout" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<ul>
+<li>This error response is given when the server is acting as a gateway and cannot get a response in time.</li>
+</ul>
+
+<h4 class="relative group"><code>505 --&gt; HTTP Version Not Supported</code> 
+    <div id="505----http-version-not-supported" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#505----http-version-not-supported" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<ul>
+<li>The HTTP version used in the request is not supported by the server.</li>
+</ul>
+
+<h4 class="relative group"><code>506 --&gt; Variant Also Negotiates</code> 
+    <div id="506----variant-also-negotiates" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#506----variant-also-negotiates" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<ul>
+<li>The server has an internal configuration error: the chosen variant resource is configured to engage in transparent content negotiation itself, and is therefore not a proper end point in the negotiation process.</li>
+</ul>
+
+<h4 class="relative group"><code>507 --&gt; Insufficient Storage</code> 
+    <div id="507----insufficient-storage" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#507----insufficient-storage" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<ul>
+<li>The method could not be performed on the resource because the server is unable to store the representation needed to successfully complete the request.</li>
+</ul>
+
+<h4 class="relative group"><code>508 --&gt; Loop Detected</code> 
+    <div id="508----loop-detected" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#508----loop-detected" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<ul>
+<li>The server detected an infinite loop while processing the request.</li>
+</ul>
+
+<h4 class="relative group"><code>510 --&gt; Not Extended</code> 
+    <div id="510----not-extended" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#510----not-extended" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<ul>
+<li>Further extensions to the request are required for the server to fulfill it.</li>
+</ul>
+
+<h4 class="relative group"><code>511 --&gt; Network Authentication Required</code> 
+    <div id="511----network-authentication-required" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#511----network-authentication-required" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<ul>
+<li>Indicates that the client needs to authenticate to gain network access.</li>
+</ul>
+<hr>
+
+<h3 class="relative group">Source 
+    <div id="source" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#source" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<ul>
+<li><a
+  href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status"
+    target="_blank"
+  >developer.mozilla.org</a></li>
+</ul>
+
+          
+          
+          
+        </div>
+        
+        
+
+        
+
+        
+
+      </div>
+
+      
+      
+        
+        
+          
+          
+        
+        
+        
+        <script
+          type="text/javascript"
+          src="/js/page.min.54b6f4371722649edbe871e431d8670d670878c22be8f36e229fe53cc9b786fe25a834def5e6de621f7a3e37b72bc8cd73839aa5ed907ed6cbd45cd3e1b0fa20.js"
+          integrity="sha512-VLb0NxciZJ7b6HHkMdhnDWcIeMIr6PNuIp/lPMm3hv4lqDTe9ebeYh96Pje3K8jNc4Oape2QftbL1FzT4bD6IA=="
+          data-oid="views_docs/2024-08-06-http-response-status-codes.md"
+          data-oid-likes="likes_docs/2024-08-06-http-response-status-codes.md"></script>
+      
+    </section>
+
+    
+    <footer class="pt-8 max-w-prose print:hidden">
+      
+  
+    
+    
+    
+    <div class="pt-8">
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600">
+      <div class="flex justify-between pt-3">
+        <span>
+          
+            <a class="flex group mr-3" href="/docs/shell-fish/">
+              <span
+                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
+                >&larr;</span
+              >
+              <span
+                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
+                >&rarr;</span
+              >
+              <span class="flex flex-col">
+                <span class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >Linux - Shells - fish</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2024-06-26T00:00:00&#43;00:00">2024-06-26</time>
+                  
+                </span>
+              </span>
+            </a>
+          
+        </span>
+        <span>
+          
+            <a class="flex text-right group ml-3" href="/docs/exploit-tools/">
+              <span class="flex flex-col">
+                <span class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >Exploit Tools</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2024-08-06T00:00:00&#43;00:00">2024-08-06</time>
+                  
+                </span>
+              </span>
+              <span
+                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
+                >&rarr;</span
+              >
+              <span
+                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
+                >&larr;</span
+              >
+            </a>
+          
+        </span>
+      </div>
+    </div>
+  
+
+
+      
+    </footer>
+  </article>
+
+        <div id="top-scroller" class="pointer-events-none absolute top-[110vh] bottom-0 w-12 ltr:right-0 rtl:left-0 z-10">
+  <a
+    href="#the-top"
+    class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 mb-16 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+    aria-label="Scroll to top"
+    title="Scroll to top">
+    &uarr;
+  </a>
+</div>
+
+      </main><footer id="site-footer" class="py-10 print:hidden">
+  
+  
+    
+  
+  <div class="flex items-center justify-between">
+    
+    
+      <p class="text-sm text-neutral-500 dark:text-neutral-400">
+          &copy;
+          2025
+          beforethesurge
+      </p>
+    
+
+    
+    
+      <p class="text-xs text-neutral-500 dark:text-neutral-400">
+        
+        
+        Powered by <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+          href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a> &amp; <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+          href="https://blowfish.page/" target="_blank" rel="noopener noreferrer">Blowfish</a>
+      </p>
+    
+  </div>
+  
+    <script>
+      mediumZoom(document.querySelectorAll("img:not(.nozoom)"), {
+        margin: 24,
+        background: "rgba(0,0,0,0.5)",
+        scrollOffset: 0,
+      });
+    </script>
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/process.min.ee03488f19c93c2efb199e2e3014ea5f3cb2ce7d45154adb3399a158cac27ca52831db249ede5bb602700ef87eb02434139de0858af1818ab0fb4182472204a4.js"
+    integrity="sha512-7gNIjxnJPC77GZ4uMBTqXzyyzn1FFUrbM5mhWMrCfKUoMdsknt5btgJwDvh&#43;sCQ0E53ghYrxgYqw&#43;0GCRyIEpA=="></script>
+  
+  
+</footer>
+<div
+  id="search-wrapper"
+  class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh] z-500"
+  data-url="http://localhost:1313/">
+  <div
+    id="search-modal"
+    class="flex flex-col w-full max-w-3xl min-h-0 mx-auto border rounded-md shadow-lg top-20 border-neutral-200 bg-neutral dark:border-neutral-700 dark:bg-neutral-800">
+    <header class="relative z-10 flex items-center justify-between flex-none px-2">
+      <form class="flex items-center flex-auto min-w-0">
+        <div class="flex items-center justify-center w-8 h-8 text-neutral-400">
+          <span class="relative block icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+        </div>
+        <input
+          type="search"
+          id="search-query"
+          class="flex flex-auto h-12 mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent"
+          placeholder="Search"
+          tabindex="0">
+      </form>
+      <button
+        id="close-search-button"
+        class="flex items-center justify-center w-8 h-8 text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+        title="Close (Esc)">
+        <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+</span>
+      </button>
+    </header>
+    <section class="flex-auto px-2 overflow-auto">
+      <ul id="search-results">
+        
+      </ul>
+    </section>
+  </div>
+</div>
+
+    </div>
+  </body>
+  
+</html>
