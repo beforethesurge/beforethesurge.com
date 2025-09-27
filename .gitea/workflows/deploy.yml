@@ -9,7 +9,7 @@ jobs:
         run: apt update
       
       - name: Install Docker
-        run: apt install docker.io -y && apt install docker-buildx -y
+        run: apt install docker.io -y
 
       - name: Install Hugo
         run: apt install hugo -y
@@ -27,7 +27,7 @@ jobs:
         run: docker login --username beforethesurge --password ${{ secrets.GT_PASS }} gitea:3000
 
       - name: Build Container
-        run: docker buildx build -t gitea:3000/beforethesurge/website:latest .
+        run: docker build -t gitea:3000/beforethesurge/website:latest .
 
       - name: Push Container to Container Registry
         run: docker push gitea:3000/beforethesurge/website:latest
