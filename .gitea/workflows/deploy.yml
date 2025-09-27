@@ -5,9 +5,8 @@ jobs:
   Builder:
     runs-on: ubuntu-latest
     steps:
-      - name: Updating Ubuntu
+      - name: Updating Ubuntu repos
         run: apt update
-        run: apt full-upgrade -y
       
       - name: Install Hugo
         run: apt install hugo -y
