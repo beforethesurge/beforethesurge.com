@@ -1,0 +1,22 @@
+name: Deploy Website
+on: [push]
+
+jobs:
+  Builder:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Updating Ubuntu
+        run: apt update
+        run: apt full-upgrade -y
+      
+      - name: Install Hugo
+        run: apt install hugo -y
+      
+      - name: Create public directory
+        run: mkdir /public
+
+      - name: Clone repo
+        run: actions/checkout@v5
+      
+      - name: Build Website
+        run: hugo
