@@ -24,7 +24,7 @@ jobs:
         run: hugo
 
       - name: Link Docker to Gitea Container Registry
-        run: echo "${{ secrets.GT_PASS }}" | docker login gitea:3000 --username beforethesurge --password-stdin
+        run: echo "${{ secrets.GT_PASS }}" | docker login http://gitea:3000 --username beforethesurge --password-stdin
 
       - name: Build Container
         run: docker build -t gitea:3000/beforethesurge/website:latest .
