@@ -1,3 +1,2 @@
-# FROM nginx:alpine
-FROM website
+FROM nginx:alpine
 COPY public /usr/share/nginx/html
