@@ -1,6 +1,6 @@
 #!/bin/bash
 
-hugo
+zensical build
 
 docker buildx build -t website:latest .
 

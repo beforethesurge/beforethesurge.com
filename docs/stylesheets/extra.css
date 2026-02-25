@@ -1,0 +1,77 @@
+body {
+    background-image: url("../images/mainBackground.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    backdrop-filter: blur(2px);
+}
+
+img[alt="my logo"] {
+    filter: drop-shadow(0 0 5px #0ff) drop-shadow(0 0 15px #0ff);
+    transition: filter 0.3s ease, transform 0.3s ease;
+    animation: logo-idle 6s steps(1, end) infinite;
+}
+
+img[alt="my logo"]:hover {
+    animation: logo-glitch 250ms steps(2, end) infinite;
+    transform: scale(1.08);
+    filter: drop-shadow(0 0 10px #0ff) drop-shadow(0 0 25px #0ff);
+}
+
+@keyframes logo-idle {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    90% {
+        transform: translate(-2px, 1px);
+        filter: hue-rotate(300deg);
+        transform: rotate(5deg);
+    }
+
+    92% {
+        transform: translate(2px, -1px);
+        filter: hue-rotate(60deg);
+    }
+
+    95% {
+        transform: translate(-1px, -2px);
+        filter: hue-rotate(200deg);
+        transform: rotate(5deg);
+    }
+
+    100% {
+        transform: translate(0, 0);
+        filter: hue-rotate(120deg);
+    }
+}
+
+@keyframes logo-glitch {
+    0% {
+        transform: translate(0, 0);
+        filter: hue-rotate(120deg);
+        transform: rotate(45deg);
+    }
+
+    25% {
+        transform: translate(-2px, 1px);
+        filter: hue-rotate(300deg);
+    }
+
+    50% {
+        transform: translate(2px, -1px);
+        filter: hue-rotate(60deg);
+    }
+
+    75% {
+        transform: translate(-1px, -2px);
+        filter: hue-rotate(200deg);
+    }
+
+    100% {
+        transform: translate(0, 0);
+        filter: hue-rotate(120deg);
+        transform: rotate(45deg);
+    }
+}

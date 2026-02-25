@@ -1,3 +1,3 @@
 #!/bin/bash
 
-hugo server --disableFastRender --noHTTPCache
+zensical serve
