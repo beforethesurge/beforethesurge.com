@@ -1,7 +1,8 @@
 ---
 title: Shells - fish
 date: 2024-06-26
-categories: [Shells]
+tags:
+  - Shells
 ---
 
 Main website of fish: [fish shell](https://fishshell.com/)

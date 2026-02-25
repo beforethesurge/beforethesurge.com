@@ -1,7 +1,8 @@
 ---
 title: Windows 11 - Bypass
 date: 2024-08-22
-categories: [Windows]
+tags:
+  - Windows
 ---
 
 ## Format Drive (if unable to find valid Drive/Disk)

@@ -1,7 +1,8 @@
 ---
 title: Proton Launch Options
 date: 2026-02-01
-categories: [Gaming]
+tags:
+  - Gaming
 ---
 
 # Proton Launch Options

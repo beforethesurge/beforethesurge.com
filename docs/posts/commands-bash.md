@@ -1,7 +1,8 @@
 ---
 title: Commands (Bash)
 date: 2024-08-22
-categories: [Bash]
+tags:
+  - Bash
 ---
 
 ## Add i386 Architecture for steam-installer (If required)

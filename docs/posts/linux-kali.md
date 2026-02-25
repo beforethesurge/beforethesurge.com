@@ -1,7 +1,8 @@
 ---
 title: Kali - Fix Archive Keyring Change
 date: 2025-06-05
-categories: [Kali]
+tags:
+  - Kali
 ---
 
 ## Fix Archive Keyring Change Errors

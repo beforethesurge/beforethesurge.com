@@ -1,7 +1,8 @@
 ---
 title: Online Information Gathering Tools
 date: 2024-08-06
-categories: [Recon]
+tags:
+  - Recon
 ---
 
 ## [Shodan](https://www.shodan.io/)

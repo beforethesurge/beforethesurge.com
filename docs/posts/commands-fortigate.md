@@ -1,7 +1,8 @@
 ---
 title: Commands (FortiGate)
 date: 2024-08-22
-categories: [FortiOS]
+tags:
+  - FortiOS
 ---
 
 ## Enable/Disable Debugging

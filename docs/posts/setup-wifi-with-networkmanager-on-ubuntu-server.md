@@ -1,7 +1,8 @@
 ---
 title: Setup WiFi with NetworkManager on Ubuntu Server
 date: 2025-12-30
-categories: [Linux]
+tags:
+  - Linux
 ---
 
 # Setup WiFi with NetworkManager on Ubuntu Server

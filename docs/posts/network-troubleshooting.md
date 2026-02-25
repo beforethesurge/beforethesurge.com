@@ -1,7 +1,8 @@
 ---
 title: Networking - Troubleshooting
 date: 2024-09-17
-categories: [Networking]
+tags:
+  - Networking
 ---
 
 ## Basic Network Troubleshooting for Workstation/Server

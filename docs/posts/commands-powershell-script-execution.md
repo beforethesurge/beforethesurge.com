@@ -1,7 +1,8 @@
 ---
 title: Powershell - Get/Set-ExecutionPolicy
 date: 2025-02-06
-categories: [PowerShell]
+tags:
+  - PowerShell
 ---
 
 ```powershell

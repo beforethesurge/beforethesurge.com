@@ -1,7 +1,8 @@
 ---
 title: Decoding and Encoding Tools
 date: 2024-08-06
-categories: [Cryptography]
+tags:
+  - Cryptography
 ---
 
 ## [Code-Breaking, Cipher and Logic Puzzle Solving Tools](https://www.boxentriq.com/)

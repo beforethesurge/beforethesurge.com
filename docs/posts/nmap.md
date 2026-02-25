@@ -1,7 +1,8 @@
 ---
 title: Nmap
 date: 2024-08-22
-categories: [Recon]
+tags:
+  - Recon
 ---
 
 ## Common Commands

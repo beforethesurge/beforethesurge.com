@@ -1,7 +1,8 @@
 ---
 title: RCs - fish
 date: 2025-06-26
-categories: [RCs]
+tags:
+  - RCs
 ---
 
 Stored in `~/.config/fish/config.fish`

@@ -1,7 +1,9 @@
 ---
 title: Windows 11 - WSL
 date: 2024-08-30
-categories: [WSL]
+tags:
+  - Windows
+  - WSL
 ---
 
 ## Disable Windows Commands through WSL Distro

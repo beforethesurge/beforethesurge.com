@@ -1,7 +1,8 @@
 ---
 title: HTTP Response Status Codes
 date: 2024-08-06
-categories: [Web]
+tags:
+  - Web
 ---
 
 ## HTTP response status codes indicate whether a specific HTTP request has been successfully completed

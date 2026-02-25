@@ -1,7 +1,8 @@
 ---
 title: Linux - Remove Snap
 date: 2025-06-05
-categories: [Linux]
+tags:
+  - Linux
 ---
 
 This is more of personal preference as I don't like the performance of `snap`, and most applications I need can be found in `flatpak/flathub`.

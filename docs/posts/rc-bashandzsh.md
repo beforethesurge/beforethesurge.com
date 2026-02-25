@@ -1,7 +1,8 @@
 ---
 title: RCs - bash & zsh
 date: 2024-08-22
-categories: [RCs]
+tags:
+  - RCs
 ---
 
 ```bash

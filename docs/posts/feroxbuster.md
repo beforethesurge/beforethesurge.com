@@ -1,7 +1,8 @@
 ---
 title: Feroxbuster
 date: 2024-10-17
-categories: [Recon]
+tags:
+  - Recon
 ---
 
 ## Used for Directory Searching Websites

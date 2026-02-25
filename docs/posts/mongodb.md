@@ -1,7 +1,8 @@
 ---
 title: MongoDB Cheat Sheet
 date: 2024-08-06
-categories: [Databases]
+tags:
+  - Databases
 ---
 
 ## Show All Databases

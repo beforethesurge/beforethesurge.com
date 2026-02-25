@@ -1,7 +1,9 @@
 ---
 title: Commands (CMD, PowerShell)
 date: 2024-08-06
-categories: [CMD,PowerShell]
+tags:
+  - CMD
+  - PowerShell
 ---
 
 ## Show General System Information (OS, Boot-time, Specs, NIC, Hyper-V Req)

@@ -1,7 +1,8 @@
 ---
 title: Windows 11 - Fixes and Tweaks
 date: 2024-08-22
-categories: [Windows]
+tags:
+  - Windows
 ---
 
 ## Ram Clear Cache

@@ -1,7 +1,8 @@
 ---
 title: Disable Pipewire in Favor of Pulseaudio
 date: 2025-08-14
-categories: [Audio]
+tags:
+  - Audio
 ---
 
 I have ran into several issues with crackling/popping noises with pipewire for a while

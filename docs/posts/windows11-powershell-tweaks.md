@@ -1,7 +1,9 @@
 ---
 title: Windows 11 - PowerShell Tweaks
 date: 2024-08-22
-categories: [PowerShell]
+tags:
+  - Windows
+  - PowerShell
 ---
 
 ## Clear Terminal History
