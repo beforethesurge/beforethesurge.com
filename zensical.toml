@@ -34,7 +34,7 @@ site_url = "https://beforethesurge.com/"
 #
 # Read more: https://zensical.org/docs/setup/basics/#copyright
 copyright = """
-Copyright &copy; 2026 beforethesurge
+Copyright &copy; {year} beforethesurge
 """
 
 # Zensical supports both implicit navigation and explicitly defined navigation.
@@ -261,14 +261,22 @@ features = [
 # - https://zensical.org/docs/setup/colors/
 # ----------------------------------------------------------------------------
 [[project.theme.palette]]
+media = "(prefers-color-scheme: light)"
 scheme = "default"
 toggle.icon = "lucide/sun"
 toggle.name = "Switch to dark mode"
 
 [[project.theme.palette]]
+media = "(prefers-color-scheme: dark)"
 scheme = "slate"
 toggle.icon = "lucide/moon"
 toggle.name = "Switch to light mode"
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: dark)"
+scheme = "slate"
+toggle.icon = "lucide/moon"
+toggle.name = "Switch to system preference"
 
 # ----------------------------------------------------------------------------
 # In the "font" subsection you can configure the fonts used. By default, fonts
@@ -306,7 +314,9 @@ toggle.name = "Switch to light mode"
 icon = "fontawesome/brands/github"
 link = "https://github.com/beforethesurge"
 
-# link = "mailto:beforethesurge@gmail.com"
+[[project.extra.social]]
+icon = "fontawesome/solid/at"
+link = "mailto:beforethesurge@gmail.com"
 
 # ----------------------------------------------------------------------------
 # My custom additions
